@@ -1,0 +1,361 @@
+<?php
+
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+if (strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) != 'xmlhttprequest' && !isset($_SERVER['HTTP_REFERER']))header("Location:ingresar.php");
+
+$ruta_raiz = "../";
+require_once($ruta_raiz . "conf/config.php");
+require_once($ruta_raiz . "inc/all.inc.php");
+require_once($ruta_raiz . "inc/verificar_sesion.inc.php");
+require_once($ruta_raiz."admin/inc/admin_db_functions.inc.php");
+require_once($ruta_raiz."admin/inc/admin_functions.inc.php");
+$origen = $_REQUEST["origen"]; /*pestaña =0; ir=1*/
+$conexion = dbConectarMySQL($config_host_bd, $config_usuario_bd, $config_password_bd, $config_bd);
+$semestres_menu = dbAdminExpSemestresExperiencias($conexion);
+$subsector = 0;
+?>
+
+<div class="container_16">
+    <div id ="admin_contenido">
+    <?php
+        if($origen == 0){
+        ?>
+           <div class="grid_4">
+                <div class="kellu_exp_menu" >
+                    <ul class="exp_menu">
+                    <?php
+                        if(!is_null($semestres_menu)){
+                            $i=0;
+                            foreach ($semestres_menu as $semestre){
+                            $i++;
+                            ?>
+                            <li <?php if($i==1){echo "class='selected'";}?>>
+                                <a class="enlace_menu" id="<?php echo substr($semestre["semestre"],0,1).$semestre["anio"];?>">
+                                <?php echo $semestre["semestre"].' '.$semestre["anio"];?>
+                                </a>
+                            </li>
+                            <?php
+                            }
+                        }
+                        ?>
+                    </ul>
+                </div>
+           </div>
+           <div class="grid_12">
+                <div class="admin_volver_administrador">
+                    <input class="admin_exp_boton_volver_inicio" type="button" value="<?php echo $lang_admin_volver_admin_general; ?>" onclick="javascript: volverAdminInicio();">
+                </div>
+                <div class="admin_filtros_sector">
+                    <ul class="admin_bloque_filtros_sector">
+                        <li class="admin_li_filtro_sector"><a class="admin_filtro_sector" id = "admin_filtro_matematica"><?php echo $lang_crear_diseno_admin_matematica;?></a> </li>
+                        <li class="admin_li_filtro_sector admin_selected"><a class="admin_filtro_sector" id = "admin_filtro_lenguaje"><?php echo $lang_crear_diseno_admin_lenguaje;?></a> </li>
+                        <li class="admin_li_filtro_sector"><a class="admin_filtro_sector" id = "admin_filtro_historia"><?php echo $lang_crear_diseno_admin_historia;?></a></li>
+                        <li class="admin_li_filtro_sector"><a class="admin_filtro_sector" id = "admin_filtro_ciencias"><?php echo $lang_crear_diseno_admin_ciencias;?></a> </li>
+                        <li class="admin_li_filtro_sector"><a class="admin_filtro_sector" id = "admin_filtro_ingles"><?php echo $lang_crear_diseno_admin_ingles;?></a> </li>
+                        <li class="admin_li_filtro_sector"><a class="admin_filtro_sector" id = "admin_filtro_diplomado"><?php echo $lang_crear_diseno_admin_diplomado;?></a> </li>
+                        <li class="admin_li_filtro_sector"><a class="admin_filtro_sector" id = "admin_filtro_tecnologia"><?php echo $lang_admin_tecnologia; ?></a> </li>
+                        <li class="admin_li_filtro_sector"><a class="admin_filtro_sector" id = "admin_filtro_otros"><?php echo $lang_crear_diseno_admin_general;?></a> </li>
+                    </ul>
+                </div>
+                <div class="clear"></div>
+                </br>
+                <div class="admin_exp_contenido">
+                </div>
+                <div class="clear"></div>
+
+            </div>
+            <?php
+            }
+            else{
+                if($origen == 1){
+                    $codeexp = $_REQUEST["codeexp"];
+                    $datos_experiencia = dbAdminExpObtenerInfo($codeexp, $conexion);
+                    $_imagenes = darFormatoImagen($datos_experiencia["url_avatar_profesor"], $config_ruta_img_perfil, $config_ruta_img)
+                ?>
+            <div class="grid_16">
+                <div id="admin_nombre_dd">
+                    <h1 class="admin_nombre_dd"><?php echo $datos_experiencia["nombre_dd"];?></h1>
+                    </br>
+                    <div class="admin_info_exp">
+                        <a href="contenido_perfil_usuario_modal.php?nombre_usuario=<?php echo $datos_experiencia["usuario_profesor"]; ?>" alt="<?php echo $_experiencia_info["nombre_profesor"]; ?>" title="<?php echo $datos_experiencia["nombre_profesor"]; ?>" class ="nombre_profesor_exp_todas">
+                            <img class="admin_avatar" src="<?php echo $_imagenes["imagen_usuario"]; ?>"/>
+                        </a>
+                        <a href="contenido_perfil_usuario_modal.php?nombre_usuario=<?php echo $datos_experiencia["usuario_profesor"]; ?>" alt="<?php echo $datos_experiencia["nombre_profesor"]; ?>" title="<?php echo $datos_experiencia["nombre_profesor"]; ?>" class ="link_perfil nombre_profesor_exp_todas""><?php echo ucwords($datos_experiencia["nombre_profesor"]); ?></a>
+
+                    </div>
+                </div>
+<!--                <div class="clear"></div>-->
+                <div class="admin_volver_experiencias">
+                    <input  class="admin_boton_volver" type="button" onclick="javascript: volverAdminExperiencias();" value="<?php echo $lang_admin_volver_menu_exp; ?>"><br>
+                </div>
+                <div class="clear"></div>
+                <!--Acordeon de opciones de administración-->
+                <div class="admin_accordion">
+                    <div>
+                        <div class="admin_ficha_contenido_titulo_c " id ="admin_general_titulo_c">
+                            <div class="admin_titulo_f">
+                                <img id="img_c" src="img/flecha_c.png"></img>
+                                <?php echo $lang_admin_general; ?>
+                            </div>
+                        </div>
+                        <div class="admin_ficha_contenido_titulo_a " id="admin_general_titulo_a">
+                            <div class="admin_titulo_f">
+                                <img id="img_a" src="img/flecha_a.png"></img>
+                                <?php echo $lang_admin_general; ?>
+                            </div>
+                        </div>
+                        <div class="admin_ficha_contenido_c" id="admin_general_c">
+
+                        </div>
+                    </div>
+                    <div>
+                        <div class="admin_ficha_contenido_titulo_c " id ="admin_colaboradores_titulo_c">
+                            <div class="admin_titulo_f" id="">
+                                <img id="img_c" src="img/flecha_c.png"></img>
+                                <?php echo $lang_admin_colaboradores; ?>
+                            </div>
+                        </div>
+                        <div class="admin_ficha_contenido_titulo_a " id="admin_colaboradores_titulo_a">
+                            <div class="admin_titulo_f">
+                                <img id="img_a" src="img/flecha_a.png"></img>
+                                <?php echo $lang_admin_colaboradores; ?>
+                            </div>
+                        </div>
+                        <div class="admin_ficha_contenido_c" id ="admin_colaboradores_c">
+
+                        </div>
+                    </div>
+                    <div>
+                        <div class="admin_ficha_contenido_titulo_c " id="admin_estudiantes_titulo_c">
+                            <div class="admin_titulo_f">
+                                <img id="img_c" src="img/flecha_c.png"></img>
+                                <?php echo $lang_admin_estudiantes; ?>
+                            </div>
+                        </div>
+                        <div class="admin_ficha_contenido_titulo_a " id="admin_estudiantes_titulo_a">
+                            <div class="admin_titulo_f">
+                                <img id="img_a" src="img/flecha_a.png"></img>
+                                <?php echo $lang_admin_estudiantes; ?>
+                            </div>
+                        </div>
+                        <div class="admin_ficha_contenido_c" id="admin_estudiantes_c">
+                        </div>
+                    </div>
+                </div>
+
+                <?php
+
+                }
+            }
+            ?>
+
+        </div>
+    </div>
+</div>
+<?php
+dbDesconectarMySQL($conexion);
+?>
+<script type="text/javascript">
+
+    function adminCargarExperiencias(subsector){
+         if (subsector == ""){
+                subsector =1;
+            }
+        $.get('admin/admin_exp_todas_experiencias.php?modo=1&semestre=<?php echo substr($semestres_menu[0]["semestre"],0,1)?>&anio=<?php echo $semestres_menu[0]["anio"];?>&subsector='+subsector, function(data) {
+          $('.admin_exp_contenido').html(data);
+        });
+    }
+    function cargarInfoGeneral(){
+        $.get('admin/admin_exp_info_general.php?codeexp=<?php echo $codeexp;?>', function(data) {
+          $('#admin_general_c').html(data);
+        });
+    }
+    function cargarColaboradores(){
+        $.get('admin/admin_exp_listado_colaboradores.php?modo=1&codeexp=<?php echo $codeexp;?>', function(data) {
+          $('#admin_colaboradores_c').html(data);
+        });
+    }
+    function cargarEstudiantes(){
+        $.get('admin/admin_exp_listado_estudiantes.php?codeexp=<?php echo $codeexp;?>', function(data) {
+          $('#admin_estudiantes_c').html(data);
+        });
+    }
+    function volverAdminExperiencias(){
+        $.get('admin/admin_experiencias.php?origen=0', function(data) {
+            $('#admin_contenido').html(data);
+        });
+    }
+    function volverAdminInicio(){
+        $.get('admin/admin_inicio.php?', function(data) {
+            $('.admin_contenido').html(data);
+        });
+    }
+
+    $(document).ready(function(){
+
+       <?php
+       if($origen == 1){
+       ?>
+            cargarEstudiantes();
+            cargarColaboradores();
+            cargarInfoGeneral();
+       <?php
+       }
+       else{
+       ?>
+               adminCargarExperiencias('1');
+       <?php
+       }
+       ?>
+       $('#admin_filtro_matematica').click(function() {
+               var subsector =0;
+               adminCargarExperiencias(subsector)
+           });
+           $('#admin_filtro_lenguaje').click(function() {
+               var subsector =1;
+               adminCargarExperiencias(subsector)
+           });
+           $('#admin_filtro_historia').click(function() {
+               var subsector=2;
+               adminCargarExperiencias(subsector)
+           });
+           $('#admin_filtro_ciencias').click(function() {
+               var subsector=3;
+               adminCargarExperiencias(subsector)
+           });
+           $('#admin_filtro_ingles').click(function() {
+               var subsector=4;
+               adminCargarExperiencias(subsector)
+           });
+           $('#admin_filtro_diplomado').click(function() {
+               var subsector=5;
+               adminCargarExperiencias(subsector)
+           });
+           $('#admin_filtro_tecnologia').click(function() {
+               var subsector=6;
+               adminCargarExperiencias(subsector)
+           });
+           $('#admin_filtro_otros').click(function() {
+               var subsector=7;
+               adminCargarExperiencias(subsector)
+           });
+
+           $('#admin_enlace_exp').click(function() {
+               var element = $(this);
+               var I = element.attr("name");
+               irAdminExperiencias(I);
+
+           });
+            $(".admin_bloque_filtros_sector a").click(function(){
+                $(this).parent().addClass('admin_selected').
+                siblings().removeClass('admin_selected');
+            });
+
+            $(".exp_menu a").click(function(){
+                $(this).parent().addClass('selected').
+                siblings().removeClass('selected');
+                $(".admin_li_filtro_sector").removeClass('admin_selected');
+                $("#admin_filtro_lenguaje").addClass('admin_selected');
+            });
+       $('.admin_exp_guardar').hide();
+       $('.admin_estudiante_guardar').hide();
+       $('#admin_general_titulo_a').hide();
+        $('#admin_general_c').hide();
+        $('#admin_colaboradores_titulo_a').hide();
+        $('#admin_colaboradores_c').hide();
+        $('#admin_estudiantes_titulo_a').hide();
+        $('#admin_estudiantes_c').hide();
+       $('#admin_general_titulo_c').click(function(){
+            $('#admin_general_c').slideDown();
+            $('#admin_general_titulo_c').hide();
+            $('#admin_general_titulo_a').show();
+            $('#admin_colaboradores_c').slideUp();
+            $('#admin_colaboradores_titulo_a').hide();
+            $('#admin_colaboradores_titulo_c').show();
+            $('#admin_estudiantes_c').slideUp();
+            $('#admin_estudiantes_titulo_a').hide();
+            $('#admin_estudiantes_titulo_c').show();
+        });
+        $('#admin_general_titulo_a').click(function(){
+            $('#admin_general_c').slideUp();
+            $('#admin_general_titulo_a').hide();
+            $('#admin_general_titulo_c').show();
+        });
+        $('#admin_colaboradores_titulo_c').click(function(){
+            $('#admin_colaboradores_c').slideDown();
+            $('#admin_colaboradores_titulo_c').hide();
+            $('#admin_colaboradores_titulo_a').show();
+            $('#admin_estudiantes_c').slideUp();
+            $('#admin_estudiantes_titulo_a').hide();
+            $('#admin_estudiantes_titulo_c').show();
+            $('#admin_general_c').slideUp();
+            $('#admin_general_titulo_a').hide();
+            $('#admin_general_titulo_c').show();
+        });
+        $('#admin_colaboradores_titulo_a').click(function(){
+            $('#admin_colaboradores_c').slideUp();
+            $('#admin_colaboradores_titulo_a').hide();
+            $('#admin_colaboradores_titulo_c').show();
+        });
+        $('#admin_estudiantes_titulo_c').click(function(){
+            $('#admin_estudiantes_c').slideDown();
+            $('#admin_estudiantes_titulo_c').hide();
+            $('#admin_estudiantes_titulo_a').show();
+            $('#admin_general_c').slideUp();
+            $('#admin_general_titulo_a').hide();
+            $('#admin_general_titulo_c').show();
+            $('#admin_colaboradores_c').slideUp();
+            $('#admin_colaboradores_titulo_a').hide();
+            $('#admin_colaboradores_titulo_c').show();
+        });
+        $('#admin_estudiantes_titulo_a').click(function(){
+            $('#admin_estudiantes_c').slideUp();
+            $('#admin_estudiantes_titulo_a').hide();
+            $('#admin_estudiantes_titulo_c').show();
+
+        });
+        $('.nombre_profesor_exp_todas').click(function() {
+            var $linkc = $(this);
+            var $dialog = $('<div></div>')
+            .load($linkc.attr('href'))
+            .dialog({
+                autoOpen: false,
+                title: '<?php echo $lang_admin_perfil_usuario; ?>',
+                width: 800,
+                height: 600,
+                modal: true,
+                buttons: {
+                    "<?php echo $lang_admin_cerrar; ?>": function() {
+                    $(this).dialog("close");
+                    }
+                },
+                close: function(ev, ui) {
+                    $(this).remove();
+                }
+                });
+            $dialog.dialog('open');
+            return false;
+       });
+//        })
+        <?php
+        $i=0;
+            while($semestres_menu[$i]){
+                ?>
+                 $('#<?php echo substr($semestres_menu[$i]["semestre"],0,1).$semestres_menu[$i]["anio"];?>').click(function(){
+                     url = 'admin/admin_exp_todas_experiencias.php?semestre=<?php echo substr($semestres_menu[$i]["semestre"],0,1)?>+&anio=<?php echo $semestres_menu[$i]["anio"];?>&subsector=<?php echo $subsector;?>';
+                     $.get(url, function(data) {
+                       $('.admin_exp_contenido').html(data);
+                     });
+                });
+                <?php
+                $i++;
+            }
+        ?>
+
+    });
+</script>
+
+

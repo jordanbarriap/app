@@ -1,0 +1,32 @@
+#scrollbar {clear: both; margin: 20px 0px 10px; }
+#scrollbar .viewport {  height:200px; overflow: hidden; position: relative; }
+#scrollbar .overview { list-style: none; position: absolute; left: 0; top: 0;width:190px; }
+#scrollbar .thumb .end,
+#scrollbar .thumb { background-color: #A8A8A8; }
+#scrollbar .scrollbar { position: relative; float: right; width: 15px; }
+#scrollbar .track { background-color:#EBEBEB ; height: 100%; width:13px; position: relative; padding: 0 1px; }
+#scrollbar .thumb { min-height: 50px; height: 20px; width: 13px; cursor: pointer; overflow: hidden; position: absolute; top: 0; }
+#scrollbar .thumb .end { overflow: hidden; height: 5px; width: 13px; }
+#scrollbar .disable{ display: none; }
+
+#scrollbar_muro {clear: both; margin: 20px 0px 10px; }
+#scrollbar_muro .viewport { height: 200px ; overflow: hidden; position: relative; }
+#scrollbar_muro .overview { list-style: none; position: absolute; left: 0; top: 0;width:190px; }
+#scrollbar_muro .thumb .end,
+#scrollbar_muro .thumb { background-color: #A8A8A8; }
+#scrollbar_muro .scrollbar { position: relative; float: right; width: 15px; }
+#scrollbar_muro .track { background-color:#EBEBEB ; height: 100%; width:13px; position: relative; padding: 0 1px; }
+#scrollbar_muro .thumb { height: 20px; width: 13px; cursor: pointer; overflow: hidden; position: absolute; top: 0; }
+#scrollbar_muro .thumb .end { overflow: hidden; height: 5px; width: 13px; }
+#scrollbar_muro .disable{ display: none; }
+
+#scrollbar_bitacora {clear: both; margin: 20px 0px 10px; }
+#scrollbar_bitacora .viewport {  height:200px; overflow: hidden; position: relative; }
+#scrollbar_bitacora .overview { list-style: none; position: absolute; left: 0; top: 0;width:190px; }
+#scrollbar_bitacora .thumb .end,
+#scrollbar_bitacora .thumb { background-color: #A8A8A8; }
+#scrollbar_bitacora .scrollbar { position: relative; float: right; width: 15px; }
+#scrollbar_bitacora .track { background-color:#EBEBEB ; height: 100%; width:13px; position: relative; padding: 0 1px; }
+#scrollbar_bitacora .thumb { height: 20px; width: 13px; cursor: pointer; overflow: hidden; position: absolute; top: 0; }
+#scrollbar_bitacora .thumb .end { overflow: hidden; height: 5px; width: 13px; }
+#scrollbar_bitacora .disable{ display: none; }

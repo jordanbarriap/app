@@ -1,0 +1,1183 @@
+
+/* Para probar css en la lista con columnas*/
+.col3 
+{ 
+color: orange;
+padding-right: 0px; 
+padding-left: 0px; 
+float: left; 
+padding-bottom: 0px; 
+margin: 15px 0px; 
+width: 100%; 
+padding-top: 0px; 
+list-style-type: none 
+} 
+
+.col3 li 
+{ 
+padding-right: 2px; 
+display: inline; 
+padding-left: 2px; 
+float: left; 
+padding-bottom: 2px; 
+width: 30%; 
+padding-top: 2px 
+}
+
+
+
+
+
+.rp_inicio_izquierda{
+    float: left;
+    margin: 30px 5px 20px;
+    width: 230px;
+}
+
+#rp_inicio_bloque_centralPortafolio{
+    width:70%;
+    float: right;
+    margin: 20px 25px 20px 0;
+}
+
+#trabajo_nuevo2{
+        font-size: 1em;
+    -webkit-border-radius: 0.4em; 
+    -moz-border-radius: 0.4em; 
+        width:  57%;
+        margin-left: 40px;
+        /*background-image: url("../../img/act_publicacion.png");*/
+        background-repeat: no-repeat;
+        background-color:#fff;
+        border:1px solid #ccc;
+        background-position: 7px 49%;
+        padding-top:10px;
+        padding-bottom:10px;
+        margin-bottom: 20px;
+}
+
+/*
+ Clases para la lista de actividades
+*/
+img.rp_icono_actividad{position: relative; top: 2px; padding: 0px 3px 0px 3px;}
+
+/* Clases generales */
+.rp_titulo_pagina{
+    font-size: 1.3em;
+    padding: 6px 0px 6px 0px;
+    border-bottom: 2px solid #CBCBBF;
+    margin-bottom:12px;
+}
+
+.rp_borde_inferior {
+    border-bottom: 2px solid #CBCBBF;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+}
+
+.rp_fuente_neutra{
+    font-size: 0.9em;
+    font-weight: lighter
+}
+
+.rp_resaltado{
+    font-weight:bold;
+}
+.rp_agrandado{
+    font-size: 1.1em;
+}
+.rp_intro_defecto p{
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+/*
+  Clases de menu derecho (prefijo rp para no confundir con los de la bitacora)
+*/
+
+.rp_color_link{
+    color:#316ac5
+}
+
+.rp_filtro_cabecera{
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+.rp_contenido_derecha{
+    width: 27%;
+    float: right;
+    line-height: 1.5em;
+    padding-top: 20px;
+    margin-left: -20px;
+}
+
+.rp_celda_contenido_formulario{
+ width:80%
+}
+
+#rp_menu{
+    padding-right:20px;
+}
+
+ul#rp_menu, ul#rp_menu ul{
+       list-style-type: none;
+}
+    
+#rp_cuadro_menu a, #rp_cuadro_menu a:link, #rp_cuadro_menu a:visited{
+    font-weight: normal;
+    font-size: 1.0em;
+    line-height: 1.5em;
+}
+
+#rp_cuadro_menu a.rp_cabecera_menu{
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.rp_div_cabecera_menu{
+    text-decoration:underline;
+    padding-bottom: 8px;
+}
+rp_cabeza_filtro{
+    text-decoration: underline
+}
+
+.rp_menu_pestana_mi_grupo{
+    -webkit-border-radius: 0.9em;
+    -moz-border-radius: 0.9em;
+    background-color: #EEF5FA;
+    margin-bottom: 12px;
+    border: 2px solid #DDEEF5;
+    padding-bottom:5px;
+    list-style-type: none;
+}
+.rp_menu_pestana_mi_grupo a{
+    margin-left:10px;
+    display:block;
+}
+.rp_menu_pestana_mi_grupo a#link_nuevo_trabajo{
+margin:0px;
+}
+
+.rp_menu_pestana_trabajos_a_revisar{
+   -webkit-border-radius: 0.9em; -moz-border-radius: 0.9em;
+    background-color: #E5E9C0;
+    margin-bottom: 12px;
+    border: 2px solid #A0AC32;
+    padding: 4px 10px 4px 10px;
+    list-style-type:none;
+}
+
+.rp_menu_pestana_trabajos_clase{
+   -webkit-border-radius: 0.9em; -moz-border-radius: 0.9em;
+    background-color: #FFFFCC;
+    margin-bottom: 12px;
+    border: 2px solid #EECC66;
+    padding: 4px 10px 4px 10px;
+    list-style-type: none;
+}
+
+.rp_menu_pestana_grupo_gemelo{
+    -webkit-border-radius: 0.9em; -moz-border-radius: 0.9em;
+    background-color: #FFE0C8;
+    margin-bottom: 12px;
+    border: 2px solid #DF7826;
+    padding: 4px 10px 4px 10px;
+    list-style-type: none;
+}
+.rp_menu_pestana_grupo_gemelo a{
+    margin-left:10px;
+    display:block;
+}
+
+.rp_menu_pestana_grupos_relacionados{
+    -webkit-border-radius: 0.9em; -moz-border-radius: 0.9em;
+    background-color: #E2F2DB;
+    margin-bottom: 20px;
+    border: 2px solid #98CF7E;
+    padding: 4px 10px 4px 10px;
+    list-style-type: none;
+}
+
+.rp_datos_aula{overflow:hidden;border-bottom:1px solid #ccc}
+.rp_datos_aula_ultimo{overflow:hidden;}
+.rp_foto_profesor_clase{float:left;margin-right: 3px}
+.rp_datos_profesor_establecimiento{float:left; font-size: 0.88em; width: 127px;padding-bottom:6px;}
+.rp_datos_profesor_establecimiento p{line-height: 1.1em;padding-bottom:4px;}
+.rp_titulo_lista_trabajos_menu{padding-top:18px; font-weight:bold; border:0 !important;}
+
+.rp_bloque_filtro {
+    margin-bottom: 10px;
+    border-top:1px;
+}
+
+.rp_bloque_filtro li{
+    margin-left:0;
+    padding-left:0;
+    padding-top:3px;
+}
+.rp_link_volver_resumen{
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 1.2em;
+    text-decoration: underline;
+}
+.rp_volver_resumen a{
+}
+
+.rp_borde_tope_rojo {
+    margin-left: -10px;
+    border-top: 2px solid #A0AC32;
+    width:112%
+}
+
+.rp_borde_tope_celeste {
+    border-top: 2px solid #DDEEF5;
+}
+
+.rp_boton_evaluar{
+    margin-bottom:8px;
+    font-size: 1em;
+    -webkit-border-radius:  0em 0em 0.4em 0.4em;
+    -moz-border-radius: 0em 0em 0.4em 0.4em;
+    background-image: url("../../img/act_revision.gif");
+    background-repeat: no-repeat;
+    background-color:#fff;
+    border-left:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+    border-right:1px solid #ccc;
+    background-position: 7px 49%;
+    padding: 5px 5px 5px 24px;
+    float:right;
+}
+.rp_ubica_link{
+    vertical-align: middle;
+    margin-left: 26px;
+}
+
+.rp_ubica_link2{
+     padding: 3px;
+}
+.rp_linea_separacion{
+    border-bottom: 2px solid #666
+}
+
+#rp_formulario_evaluacion{
+    margin-top: 15px;
+}
+
+.rp_celda_pregunta{
+    width: 350px;
+    border-right:1px solid #cdcdbf;
+}
+
+.rp_fila_cabecera{
+    height:200%;
+    text-align: center;
+}
+
+.rp_texto_central{
+    text-align: center
+}
+
+.rp_tdnl{
+    width: 49px;
+}
+.rp_tdpl{
+    width: 52px;
+}
+.rp_tdml{
+    width: 95px;
+}
+
+.rp_tdl{
+    width: 48px;
+}
+.rp_centrar{
+    text-align: center;
+    top:50%;
+        position: relative;
+}
+
+.rp_centrar_texto{
+    text-align: center;
+}
+
+.rp_cuadro_justificacion{
+    margin-bottom: 10px;
+    
+}
+.rp_fuente_justificacion{
+    font-size: 1.2em;
+    font-weight: 700
+}
+
+/*
+Clases de ventana rpDespliegaTrabajo
+*/
+
+.rp_despliegue_trabajo{ padding-bottom: 15px;}
+.rp_despliegue_trabajo td{padding: 5px 10px 5px 10px; }
+.rp_celda_cabecera{width: 105px; vertical-align: top; padding-top: 3px;text-align: right}
+.rp_celda_cabecera_der{width: 10px; vertical-align: top; padding-top: 3px; text-align: right}
+#rp_titulo_lista_comentarios{font-size: 1.0em !important; font-weight:bold;width: 80%;float:left;}
+#rp_titulo_timeline{overflow:hidden;}
+#rp_div_recargar{float:right;}
+.rp_tabla_producto{
+    border-bottom: 1px solid #CBCBBF;
+    width:95%;
+    margin: 0 auto 0 auto
+}
+.rp_borde_cero{
+    border: 0px;
+}
+.rp_margen_tabla{
+    margin-bottom: 12px;
+    margin-top: 12px
+}
+
+.rp_margen_tope{
+    margin-top:10px
+}
+
+.rp_flotar_derecha{
+    float:right
+}
+.rp_fuente_grande{
+    font-size: 1.2em
+}
+
+#resultado_envio_comentario{
+    padding: 10px 20px; background-color: #F0F0E0; font-weight:bold;
+}
+
+#cuadro_producto{
+    font:12px Helvetica,'Helvetica Neue',Arial,'Liberation Sans',FreeSans,sans-serif;
+    width: 72%;
+    float:left;
+    margin-top:20px;
+    margin-bottom:20px;
+    margin-left:20px;
+    margin-right: -40px;
+    background-color: #FFF;
+}
+/* @@@@ */
+#cuadro_producto_instrucciones{
+    background-color: #FCF;
+}
+    
+#producto_derecha{
+        width:28%;
+    float:right;
+    font-size: 1.0em; 
+    font-weight:bold; 
+    color: #666666;
+    text-align: center;
+}
+
+#ingresar_descripcion{
+    width:100%
+}
+
+#producto_derecha_formulario{
+        width:50%;
+    float:right;
+}
+
+.rp_contenido_formulario{
+    width: 110px;
+    vertical-align:middle;
+}
+
+.rp_contenido_formulario_examinar{
+    width: 145px;
+    vertical-align:middle;
+}
+
+#cuadro_resumen{
+}
+
+#cuadro_comentarios{
+    margin-top: 10px;
+}
+
+#titulo_producto{
+    font:12px Helvetica,'Helvetica Neue',Arial,'Liberation Sans',FreeSans,sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align:center;
+    margin-top: 5px;
+    border-top: 1px solid #cdcdbf;
+}
+
+#producto_izquierda{
+    width:700px;
+    /*height:500px;*/
+}
+
+#producto_izquierda_formulario{
+        float:left;
+    width:50%;
+    /*height:500px;*/
+}
+
+.rp_centro_vertical{
+    vertical-align: middle
+}
+.rp_centro_vertical a{
+    color: #3c78b5
+}
+
+#trabajo_nuevo{
+        font-size: 1em;
+    -webkit-border-radius: 0.4em; 
+    -moz-border-radius: 0.4em; 
+        width:  57%;
+        margin-left: 40px;
+        background-image: url("../../img/act_publicacion.png");
+        background-repeat: no-repeat;
+        background-color:#fff;
+        border:1px solid #ccc;
+        background-position: 7px 49%;
+        padding-top:10px;
+        padding-bottom:10px;
+        margin-bottom: 20px;
+}
+#trabajo_nuevo_ocupado{
+    margin-bottom:8px;
+    border: 1px solid #666;
+        font-size: 1em;
+    -webkit-border-radius: 0.4em;
+    -moz-border-radius: 0.4em;
+    background-color:#F8F8F8;
+        width:  85%;
+}
+
+.rp_color_alerta {
+    color: #da5814;
+    margin-top: 10px
+}
+
+#lista_resumen li{
+    float:left;
+    margin-left:10px;
+    margin-top: 5px;
+    font-size: 0.8em;
+    list-style-type:none;
+}
+
+#producto_izquierda_superior{
+}
+
+.borde_tabla{
+     border: 1px solid #cdcdbf;
+    -webkit-border-radius: 0.4em;
+    -moz-border-radius: 0.4em;
+    margin-bottom: 10px;
+}
+
+.rp_tope_tabla{
+    margin-top:20px;
+}
+
+.tabla_tipo{
+     border:hidden;
+}
+
+.lista_datos{
+    list-style-type:none;
+}
+
+#descripcion a{
+    color:#3333ff;
+}
+
+.celda_titulo{
+   text-align: center;
+   padding:5px 0px 5px 0px;
+   font-weight: bold;
+   font-size: 1.2em;
+}
+
+.titulo{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5;
+}
+
+.celda_instruccion{
+    background-color: #F6CECE;
+}
+
+.celda_cabecera{
+    width: 22%;
+    text-align: center;
+}
+
+.celda_contenido{
+    width: 78%;
+    background-color: white;
+    margin-bottom: 0px;
+}
+
+
+#producto_izquierda_inferior{
+    margin-bottom: 20px;
+}
+
+#boton_modificar, #boton_publicar{
+    margin: 10px 0 10px 0;
+    background-color: #7A923B;
+    border: medium none;
+    -moz-border-radius: 0.5em 0.5em 0.5em 0.5em;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    height: 35px;
+    text-align: center;
+    width: 120px;
+    float: right;
+}
+
+
+/*
+Clases de ventana rpCuadroIngresaTrabajo
+*/
+
+#cuadro_ingesar{
+    /*margin-left: 12px;*/
+}
+.ingresa_trabajo{
+    width: 100%
+}
+.ingresa_trabajo tr{margin-bottom:10px}
+.ingresa_trabajo td{padding-bottom: 15px;}
+.ingresa_trabajo input{padding: 3px 4px 3px 4px; border: 1px solid #CCC;}
+.ingresa_trabajo textarea{padding: 3px 4px 3px 4px; border: 1px solid #CCC;}
+
+#boton_examinar{
+    float:right;
+    margin-left: 5px;
+}
+.ingresa_texto{
+    width: 95%;
+    margin-left: 5px;
+    -moz-border-radius: 0.5em 0.5em 0.5em 0.5em;
+}
+
+.ingresa_texto_archivo{
+    width: 145%;
+    margin-left: 5px;
+    -moz-border-radius: 0.5em 0.5em 0.5em 0.5em;
+}
+
+.ingresa_texto_titulo{
+    width: 100%;
+    overflow: hidden;
+    margin-left: 5px;
+    -moz-border-radius: 0.5em 0.5em 0.5em 0.5em;
+}
+
+.ingresa_texto_link{
+    width: 94%;
+}
+.rp_datos_integrate{
+    float:left;
+    width: auto; 
+    height: 50px;
+    margin-right: 10px;
+}
+
+.rp_img_integrantes{
+    width: 30px;
+    height: 30px;
+   /* margin-left: 25%;*/
+}
+
+.rp_img_integrantes2{
+    width: 40px;
+    height: 40px;
+    margin: 6px 5px 0px 0px;
+    moz-border-radius: 0.5em 0.5em 0.5em 0.5em;
+}
+
+.rp_nombre_integrantes{
+    float:right;
+    font-size: 0.8em;
+    margin-left: 5px;
+    margin-top: 5px;
+    text-decoration: none;
+}
+
+#rp_texto_tamano_maximo{
+    margin-left: 5px;
+    color: #CCCCCC
+}
+
+.rp_tabla_grupo_revisor{
+    margin-bottom: 0px
+}
+
+.rp_celda_revisor_cabecera{
+    text-align:right;
+    padding-right: 5px;
+}
+
+
+.rp_celda_revisor_contenido{
+    padding-right: 20px;
+    text-align:left;
+}
+
+.rp_float_left{
+    float: left
+}
+
+.rp_float_right{
+    float:right
+}
+
+.rp_destaca_revisor{
+    font-weight : bold;
+}
+
+.rp_tabla_datos_revisor{
+    padding: 5px 0px 10px 10px;
+    background-color: #F4BC49;
+    -moz-border-radius: 0.5em 0.5em 0em 0.0em;
+    margin:0px
+}
+
+.rp_tabla_datos_revisor_modal{
+    padding: 10px 0px 0px 10px;
+    margin:0px
+}
+
+.rp_evaluar_grupo{
+    margin-bottom: 50px;
+}
+
+.ingresa_parrafo{
+    width: 100%;
+    height: 85px;
+    margin-left: 5px;
+    -moz-border-radius: 0.5em 0.5em 0.5em 0.5em;
+}
+
+.rp_margen_inferior{
+    margin-bottom: -20px
+}
+
+.rp_margen_derecha{
+    margin-right: 10px
+}
+.rp_margen_izquierda{
+    margin-left: 20px
+}
+.rp_margen_izquierda2{
+    margin-left: 25px
+}
+
+.rp_instruccion{background-color: #F5F5E5; padding: 15px 20px 15px 20px; margin: 5px 0px 5px 0px;}
+#rp_boton_publicar{margin-left:20px;padding: 4px;}
+/*
+Clases para texto de vinculacion cuando se finaliza tarea
+*/
+
+.texto_checkbox{
+    color: #da5814;
+}
+.texto_checkbox_rojo{
+    color: red;
+}
+
+/*Clases para menu profesor rp_menu_profesor*/
+rp_datos_esquina_acordion{
+    text-align: right;
+}
+.celda_cabecera_profesor{
+    width: 20%;
+    background-color: #EDEDE9;
+}
+
+.celda_contenido_profesor{
+    width: 50%;
+    background-color: white;
+}
+
+.celda_titulo_profesor{
+   text-align: center;
+   padding:5px 0px 5px 0px;
+   font-weight: bold;
+   font-size: 1.2em;
+   background-color: #edede9;
+}
+/* Clases para resumen para profesor rp_resumen_profesor.php */
+.rp_item_lista_trabajos{
+    padding:8px 15px 8px 25px; 
+    margin:0px 0px 10px 0px;
+    background: url("../../img/act_publicacion.png") no-repeat scroll left 10px;
+    border-bottom: 1px dashed #CBCBBF;
+}
+
+.rp_item_lista_trabajos{
+    padding:8px 15px 8px 25px;
+    margin:0px 0px 10px 0px;
+    background: url("../../img/act_publicacion.png") no-repeat scroll left 10px;
+    border-bottom: 1px dashed #CBCBBF;
+}
+.rp_img_trabajo{
+    display: block;
+    padding-bottom: 3px;
+    padding-left: 3px;
+    padding-top: 3px;
+}
+
+#link_solo_trabajo_mi_clase_cabecera{
+    margin:0;
+    text-align:center;
+    display:block;
+    -webkit-border-top-left-radius:0.5em;
+    -webkit-border-top-right-radius:0.5em;
+    -moz-border-radius-topright: 0.5em;
+    -moz-border-radius-topleft: 0.5em;
+    padding:4px 0 4px 0;
+}
+.rp_titulo_trabajo{font-weight:bold;}
+
+.rp_li_trabajo{
+    
+}
+
+.rp_texto_acordion_profesor{
+    border-top: 1px #000;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+table.rp_t_lista_productos{
+    width:100%;
+    margin-bottom:0;
+}
+.rp_lista_productos, .rp_lista_productos_revision, .rp_lista_productos_anteriores{
+    -webkit-border-radius:.4em;
+    -moz-border-radius:.4em;
+    padding:0;
+    background-color:#fff;
+    border:1px solid #cdcdbf;
+    margin: 10px 0px 30px 0px;
+}
+
+.rp_lista_productos td{
+    padding:2px 8px;
+    font-size:1em;
+    line-height:1.5em
+}
+
+.rp_lista_productos_revision td{
+    padding:3px 8px;
+    font-size:1em;
+    line-height:1.5em
+}
+
+.rp_lista_productos_anteriores{
+margin: 0px;
+}
+
+.rp_lista_productos_anteriores td{
+    padding:3px 8px;
+    font-size:1em;
+    line-height:1.5em
+}
+
+.rp_lista_productos_revision{
+    -webkit-border-radius: 0.0em 0.0em 0.0em 0.4em;
+    -moz-border-radius:0.0em 0.0em 0.0em 0.4em;
+    margin: 0px;
+}
+
+
+/*table.t_lista_grupos{width:320px;}
+.titulo_grup{background-color:#F2F2F2;border-top:1px solid #E2E2E2;padding:4px 5px 5px}
+.fotos_grup{padding:6px 2px 2px;height:50px}
+.titulo_texto_g{font-size:1.1em;font-weight:700}*/
+.rp_lista_productos a,.rp_lista_productos a:visited,.rp_lista_productos a:link,
+.rp_lista_productos_anteriores a,.rp_lista_productos_anteriores a:visited,.rp_lista_productos_anteriores a:link,
+.rp_lista_productos_revision a,.rp_lista_productos_revision a:visited,.rp_lista_productos_revision a:link{
+    font-weight:400
+}
+
+
+td.rp_titulo_lista_productos{
+    font-weight:700;
+    padding:5px 8px;
+    border-bottom:1px solid #cdcdbf
+}
+td.rp_tlp0{
+    width:30%;
+    text-align:left;
+    background-color: #FFF;
+}
+td.rp_tlp1{
+    width:30%;
+    text-align:left;
+/*    background-color: #FFF;*/
+    border-top:1px solid #cdcdbf;
+    border-right:1px solid #cdcdbf;
+    vertical-align: middle;
+}
+td.rp_tlp2{
+    width:5%;
+    text-align:center;
+    vertical-align: middle;
+}
+td.rp_tlp5{
+    width:2%;
+        text-align:center
+}
+td.rp_tlp6{
+    width:30%;
+    text-align:center;
+    vertical-align: middle;
+}
+td.rp_tlp3/*,td.rp_tlp4*/{
+    width:5%;
+    text-align:center;
+    vertical-align: middle
+}
+td.rp_filapar{
+    background-color:#FFF
+}
+td.rp_filaimpar{
+    background-color:#edede9
+}
+.rp_filaimpar{
+    background-color:#edede9
+}
+td.rp_primer_producto{
+    background-color:#edede9;
+    border-top:1px solid #cdcdbf;
+}
+p.rp_nombre_act_tabla{ /* hay que cmabiar para que se posicionen actividades la medio*/
+     position: relative;
+     top: 50%
+}
+
+.mensaje_sin_producto{
+    margin-bottom:10px
+}
+
+p.grupo_sin_producto{
+    text-align: left;
+    font-weight: bold;
+    color: #da5814;
+    margin-left:20px;
+}
+
+/*.link_ventana_comentarios_actividad img{position:relative;top:2px}
+.boton_comenzar{background-color:#7a923b;color:#FFF;-webkit-border-radius:.5em;-moz-border-radius:.5em;font-weight:700;font-size:.9em;text-align:center;padding:2px 4px;cursor:pointer}
+.boton_comenzar_desact{background-color:#ffffa9;color:#FFF;-webkit-border-radius:.5em;-moz-border-radius:.5em;font-weight:700;font-size:.9em;text-align:center;padding:2px 4px;cursor:pointer}
+.boton_finalizar{background-color:#f4bc48;color:#FFF;-webkit-border-radius:.5em;-moz-border-radius:.5em;font-weight:700;font-size:.9em;text-align:center;padding:2px 4px;cursor:pointer;width:100%}
+.boton_finalizada{background:url(../img/ok_16.png) top center no-repeat;width:100%;height:16px}
+.boton_deshacer_actividad{background:url(../img/rehacer_16.png) 3px 0 no-repeat;width:16px;height:16px}
+.desactivado{opacity:.35;filter:Alpha(Opacity=35)}*/
+
+/*Para la tabla de revision */
+table.rp_t_lista_revisa{
+    width:100%;
+    margin-bottom:0;
+}
+.rp_lista_revisa{
+    -webkit-border-radius:.4em;
+    -moz-border-radius:.4em;
+    padding:0;
+    background-color:#fff;
+    border:1px solid #cdcdbf;
+    margin:10px 0px 15px 0px
+}
+.rp_lista_revisa td{
+    padding:3px 8px;
+    font-size:1em;
+    line-height:1.5em
+}
+/*table.t_lista_grupos{width:320px;}
+.titulo_grup{background-color:#F2F2F2;border-top:1px solid #E2E2E2;padding:4px 5px 5px}
+.fotos_grup{padding:6px 2px 2px;height:50px}
+.titulo_texto_g{font-size:1.1em;font-weight:700}*/
+.rp_lista_revisa a,.rp_lista_revisa a:visited,.rp_lista_revisa a:link, .rp_nombre_profesor p{
+    font-weight:400
+}
+td.rp_titulo_lista_revisa{
+    font-weight:700;
+    padding:5px 8px;
+    border-bottom:1px solid #cdcdbf
+}
+td.rp_tlr0{
+    width:30%;
+    text-align:left;
+    background-color: #FFF;
+}
+td.rp_tlr1{
+    width:28%;
+    text-align:left;
+/*    background-color: #FFF;*/
+    border-top:1px solid #cdcdbf;
+    border-right:1px solid #cdcdbf;
+    vertical-align: middle;
+}
+td.rp_tlr2{
+    width:10%;
+    text-align:center;
+    vertical-align: middle;
+}
+td.rp_tlr22{
+    width:28%;
+    text-align:center;
+    vertical-align: middle;
+}
+
+td.rp_tlr5{
+    width:2%;
+        text-align:center
+}
+td.rp_tlr6{
+    width:28%;
+    text-align:center;
+    vertical-align: middle;
+}
+td.rp_tlr7{
+    width:48%;
+    text-align:center;
+    vertical-align: middle;
+}
+.rp_borde_derecha_tabla {
+   border-right:1px solid #cdcdbf;
+}
+.rp_borde_arriba_tabla {
+   border-top:1px solid #cdcdbf;
+}
+
+td.rp_tlr4{
+    width:25%;
+    text-align:center;
+}
+td.rp_tlr3{
+    width:25%;
+    text-align:center;
+    vertical-align: middle;
+}
+p.rp_tlr3{
+    text-align:center;
+}
+td.rp_filapar{
+    background-color:#FFF
+}
+td.rp_filaimpar{
+    background-color:#edede9
+}
+td.rp_primer_revision{
+    background-color:#edede9;
+    border-top:1px solid #cdcdbf;
+}
+p.rp_nombre_act_tabla{ /* hay que cmabiar para que se posicionen actividades la medio*/
+     position: relative;
+     top: 50%
+}
+
+.rp_contiene_titulo{
+ height:30px;
+ /*margin-bottom: 10px;*/
+}
+
+.rp_contiene_titulo_otras_aulas{
+ height:63px;
+ /*margin-bottom: 10px;*/
+}
+
+.rp_datos_titulo_acordion_otras{
+    width:50%;
+    float:left
+}
+
+.rp_titulo_grupos_izq{
+float:left;
+}
+.rp_titulo_grupos_der{
+float:right;
+margin-right: 8px;
+}
+.rp_datos_establecimiento{
+    background-color: #FFFFFF;
+    border: 1px solid #DF7826;
+    border-radius: 0.5em;
+    font-size: 0.88em;
+    padding: 5px;
+    width: 93%;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+}
+
+#rp_inicio_bloque_central{
+    width:70%;
+    float: right;
+    margin: 20px 25px 20px 0;
+}
+
+#rp_inicio_bloque_centralPortafolio{
+    width:70%;
+    float: right;
+    margin: 20px 25px 20px 0;
+}
+
+#rp_formulario_nuevo_trabajo{
+    margin-top: 20px;
+}
+
+.rp_titulo_acordion{
+    margin-bottom: 10px;
+    
+}
+
+.rp_info_profesor_trabajos{
+    width: 12%;
+    float:right;
+    height: 57px;
+}
+
+.rp_foto_profe_trabajos{
+   float:left
+}
+
+.rp_dato_acordion{
+    height: 5px
+}
+
+rp_nombre_profesor{
+    width:50%;
+    float:left;
+    padding-top: 15px;
+}
+
+.rp_imagen_profesor{
+    margin:0px;
+    -moz-border-radius: 0.4em 0.4em 0.4em 0.4em;
+}
+
+.rp_padding_superior{
+    
+}
+
+.rp_datos_titulo_acordion_est{
+    width:25%;
+    float:left
+}
+
+.rp_cuadro_comentarios_producto{
+    padding-left: 20px;
+    width: 95%;
+}
+
+#rp_cuadro_guia{
+   background-color: #FFDDC6;
+    background-position: 0 49%;
+    background-repeat: no-repeat;
+    border-radius: 0.4em 0.4em 0.4em 0.4em;
+    font-size: 0.9em;
+    margin-left: 20px;
+    margin-top: 30px;
+    padding: 5px 5px 5px 5px;
+    width: 75%;
+}
+
+.rp_inicio_izquierda{
+    float: left;
+    margin: 30px 5px 20px;
+    width: 230px;
+}
+
+/*td.rp_tlp10{td.rp_tlp0
+    width:30%;
+    text-align:left;
+    vertical-align: middle
+}
+td.rp_tlp11{td.rp_tlp1
+    width:30%;
+    text-align:left;
+    background-color: #FFF;
+    border-top:1px solid #cdcdbf;
+    border-right:1px solid #cdcdbf;
+    vertical-align: middle;
+}
+td.rp_tlp12{td.rp_tlp2
+    width:25%;
+    text-align:center;
+    vertical-align: middle
+}
+td.rp_tlp15{td.rp_tlp5
+    width:2%;
+        text-align:center
+}
+td.rp_tlp16{td.rp_tlp6
+    width:25%;
+    text-align:center;
+    vertical-align: middle
+}
+td.rp_tlp13{,td.rp_tlp3
+    width:15%;
+    text-align:center;
+    vertical-align: middle
+}*/
+.rp_inicio_izquierda{margin:30px 5px 20px; width:230px;float:left;}
+rp_tabla_grupo_revisor_modal{
+    margin-bottom: 0px;
+}
+
+.rp_linea_separacion_evaluacion_alumno{
+    border-bottom: 1px solid #cdcdbf;
+    margin-bottom: 15px;
+        margin-top: 20px
+}
+
+.rp_margen_bottom{
+    margin-bottom: 10px;
+}
+
+.rp_borde_fondo_celda{
+    border-bottom: 1px solid #CDCDBF;
+}
+
+.rp_margen_cero{
+    margin-bottom:0px
+}
+
+rp_padding_cero{
+    padding: 0px 0px 0px 0px;
+}
+
+.rp_icono_rev_tabla{
+    padding-left: 20px;
+    padding-right: 0px;
+}
+
+.rp_integrante_img{
+    margin-left:35px;
+}
+
+
+
+img.rp_imagen_bloque_infg{width: 30px; height: 30px;}
+
+.rp_cuadro_grupo{
+    width: 70%
+}
+.rp_relleno_tope{
+    top: 50%;
+}
+
+.rp_aviso_no_asignado{
+    text-align: center;
+padding: 30px 0 30px 0px;
+font-size: 1.1em
+}
+

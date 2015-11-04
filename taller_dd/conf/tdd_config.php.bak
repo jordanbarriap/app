@@ -1,0 +1,79 @@
+<?php
+    /**
+     * @author  Elson Gueregat - Kelluwen
+     * @copyleft Kelluwen, Universidad Austral de Chile
+     * @license www.kelluwen.cl/app/licencia_kelluwen.txt
+     * @version 0.1  
+     **/
+
+$carpeta_subida_archivos = 'dd/actividades'; //partiendo desde app_dev/
+$config_ruta_archivo_ejemplo = 'taller_dd/doc_ejemplo'; //partiendo desde app_dev/
+$max_tamano = 5*1024*1024; //tamaño maximo para archivo en mb
+
+$_niveles = array(
+    0 => 'NB1 (Primer y Segundo Año Básico)',
+    1 => 'NB2 (Tercer y Cuarto Año Básico)',
+    2 => 'NB3 (Quinto Año Básico)',
+    3 => 'NB4 (Sexto Año Básico)',
+    4 => 'NB5 (Séptimo Año Básico)',
+    5 => 'NB6 (Octavo Año Básico)',
+    6 => 'NM1 (Primer Año Medio)',
+    7 => 'NM2 (Segundo Año Medio)',
+    8 => 'NM3 (Tercer Año Medio)',
+    9 => 'NM4 (Cuarto Año Medio)'
+);
+
+$_sectores = array(
+    0 => array('valor'=> 'SMT','nombre'=>'Matemática'),
+    1 => array('valor'=> 'SLC','nombre'=>'Lenguaje y Comunicación'),
+    2 => array('valor'=> 'SHG','nombre'=>'Historia, Geografía y Ciencias Sociales'),
+    3 => array('valor'=> 'SCS','nombre'=>'Ciencias Naturales'),
+    4 => array('valor'=> 'SIE','nombre'=>'Idioma Extranjero Inglés'),
+    5 => array('valor'=> 'SG', 'nombre'=>'Otro')
+);
+
+$_act_tipo = array(
+    0 => array('valor'=> 1, 'nombre'=>'Sala'),
+    1 => array('valor'=> 2, 'nombre'=>'Laboratorio'),
+    2 => array('valor'=> 3, 'nombre'=>'Terreno')
+);
+$actividad_laboratorio = 2;
+
+$_act_medios_trabajos= array(
+    0 => array('valor'=> 1, 'nombre'=>'NO'),
+    1 => array('valor'=> 2, 'nombre'=>'Publicación'),
+    2 => array('valor'=> 3, 'nombre'=>'Revisión')
+);
+$actividad_publicacion = 2;
+$actividad_revision = 3;
+
+$rutaObjCurriculares_SMT = 'http://www.kelluwen.cl/app/taller_dd/doc/sector_matematica_11012010.pdf';
+$rutaObjCurriculares_SLC = 'http://www.kelluwen.cl/app/taller_dd/doc/sector_lenguaje_y_comunicacion_11012010.pdf';
+$rutaObjCurriculares_SHG = 'http://www.kelluwen.cl/app/taller_dd/doc/sector_historia_geografia_y_ciencias_sociales_11012010.pdf';
+$rutaObjCurriculares_SCS = 'http://www.kelluwen.cl/app/taller_dd/doc/sector_ciencias_naturales_11012010.pdf';
+$rutaObjCurriculares_SIE=  'http://www.kelluwen.cl/app/taller_dd/doc/sector_ingles_11012010.pdf';
+$rutaObjCurriculares_SG = '';
+
+$_ta_diseno = array(
+    0 => 'fcd_descripcion',
+    1 => 'fcd_objetivos_curriculares',
+    2 => 'fcd_objetivos_transversales',
+    3 => 'fcd_contenidos',
+    4 => 'fcd_descripcion_etapa1',
+    5 => 'fcd_descripcion_etapa2',
+    6 => 'fcd_descripcion_etapa3'
+);
+$_ta_actividad = array(
+    0 => 'fca_aprendizaje_esperado',
+    1 => 'fca_evidencia_aprendizaje',
+    2 => 'fca_descripcion_general',
+    3 => 'fca_medios_otros',
+    4 => 'fca_inicio',
+    5 => 'fca_desarrollo',
+    6 => 'fca_cierre',
+    7 => 'fca_consejos',
+    8 => 'fca_medios'
+);
+
+
+?>

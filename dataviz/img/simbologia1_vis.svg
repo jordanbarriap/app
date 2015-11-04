@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="390"
+   height="150"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="simbologia1_vis.svg">
+  <defs
+     id="defs4">
+    <marker
+       inkscape:stockid="Arrow2Lstart"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Lstart"
+       style="overflow:visible">
+      <path
+         id="path3796"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(1.1,0,0,1.1,1.1,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mstart"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Mstart"
+       style="overflow:visible">
+      <path
+         id="path3802"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(0.6,0.6)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lstart"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lstart"
+       style="overflow:visible">
+      <path
+         id="path3778"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(0.8,0,0,0.8,10,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="194.63624"
+     inkscape:cy="55.121871"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="549"
+     inkscape:window-height="423"
+     inkscape:window-x="-32000"
+     inkscape:window-y="-32000"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-902.36218)">
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3790"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"><flowRegion
+         id="flowRegion3792"><rect
+           id="rect3794"
+           width="55"
+           height="63.57143"
+           x="452.85715"
+           y="368.07648" /></flowRegion><flowPara
+         id="flowPara3796" /></flowRoot>    <path
+       sodipodi:type="arc"
+       style="fill:none;stroke:#000000;stroke-width:3.98191571;stroke-miterlimit:4;stroke-opacity:0.78431373;stroke-dasharray:11.94574681, 3.9819156;stroke-dashoffset:0"
+       id="path3810"
+       sodipodi:cx="207.85715"
+       sodipodi:cy="484.50504"
+       sodipodi:rx="40"
+       sodipodi:ry="40"
+       d="m 247.85715,484.50504 c 0,22.09139 -17.90861,40 -40,40 -22.09139,0 -40,-17.90861 -40,-40 0,-22.09139 17.90861,-40 40,-40 22.09139,0 40,17.90861 40,40 z"
+       transform="matrix(0.62783852,0,0,0.62783852,-74.117598,697.83186)" />
+    <path
+       sodipodi:type="arc"
+       style="fill:none;stroke:#000000;stroke-width:3.98191571;stroke-miterlimit:4;stroke-opacity:0.78431373;stroke-dasharray:11.94574681, 3.9819156;stroke-dashoffset:0"
+       id="path3812"
+       sodipodi:cx="200.71428"
+       sodipodi:cy="468.07648"
+       sodipodi:rx="78.571426"
+       sodipodi:ry="78.571426"
+       d="m 279.28571,468.07648 c 0,43.3938 -35.17763,78.57142 -78.57143,78.57142 -43.3938,0 -78.57143,-35.17762 -78.57143,-78.57142 0,-43.3938 35.17763,-78.57143 78.57143,-78.57143 43.3938,0 78.57143,35.17763 78.57143,78.57143 z"
+       transform="matrix(0.62783852,0,0,0.62783852,-70.529949,686.28524)" />
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:0.78431373;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="104.10663"
+       y="930.19458"
+       id="text4776"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4778"
+         x="104.10663"
+         y="930.19458"
+         style="font-size:16px;font-weight:bold;fill:#000000;fill-opacity:0.78431373;-inkscape-font-specification:Sans Bold">Mayor participación en la Bitácora</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:0.78365383;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="106.9873"
+       y="974.40222"
+       id="text4776-1"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4778-7"
+         x="106.9873"
+         y="974.40222"
+         style="font-size:16px;font-weight:bold;fill:#000000;fill-opacity:0.78365383;-inkscape-font-specification:Sans Bold">Menor participación en la Bitácora</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:0.78365383;stroke-dasharray:none"
+       d="m 59.599001,928.4231 42.426409,0"
+       id="path4821-0"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:0.78365383;stroke-dasharray:none"
+       d="m 58.649763,973.52455 42.426407,0"
+       id="path4821-0-9"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>

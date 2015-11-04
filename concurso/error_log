@@ -1,0 +1,33 @@
+[07-May-2012 09:42:36] PHP Warning:  Invalid argument supplied for foreach() in /home/kelluwen/public_html/app/concurso/con_form_crear_diseno.php on line 787
+[07-May-2012 09:43:20] PHP Warning:  Invalid argument supplied for foreach() in /home/kelluwen/public_html/app/concurso/con_form_crear_diseno.php on line 787
+[07-May-2012 10:06:29] PHP Warning:  Invalid argument supplied for foreach() in /home/kelluwen/public_html/app/concurso/con_form_crear_diseno.php on line 787
+[07-May-2012 10:07:52] PHP Warning:  Invalid argument supplied for foreach() in /home/kelluwen/public_html/app/concurso/con_form_crear_diseno.php on line 788
+[07-May-2012 10:13:47] PHP Warning:  mysql_query(): supplied argument is not a valid MySQL-Link resource in /home/kelluwen/public_html/app/inc/db_functions.inc.php on line 68
+[07-May-2012 10:13:47] PHP Warning:  mysql_query(): supplied argument is not a valid MySQL-Link resource in /home/kelluwen/public_html/app/inc/db_functions.inc.php on line 68
+[08-May-2012 10:39:47] PHP Warning:  require_once(./../concurso/lib/PHPWord.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home/kelluwen/public_html/app/concurso/con_crearWord.php on line 6
+[08-May-2012 10:39:47] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required './../concurso/lib/PHPWord.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/kelluwen/public_html/app/concurso/con_crearWord.php on line 6
+[08-May-2012 10:41:17] PHP Fatal error:  Uncaught exception 'Exception' with message 'Could not close zip file ./data/Elija_un_nombre_que_conjugue_objetivos_de_aprendizaje_y_herramienta_2.0_a_utilizar_08052012.docx.' in /home/kelluwen/public_html/app/concurso/lib/PHPWord/Writer/Word2007.php:158
+Stack trace:
+#0 /home/kelluwen/public_html/app/concurso/con_crearWord.php(395): PHPWord_Writer_Word2007->save('./data/Elija_un...')
+#1 {main}
+  thrown in /home/kelluwen/public_html/app/concurso/lib/PHPWord/Writer/Word2007.php on line 158
+[08-May-2012 10:41:22] PHP Fatal error:  Uncaught exception 'Exception' with message 'Could not close zip file ./data/Elija_un_nombre_que_conjugue_objetivos_de_aprendizaje_y_herramienta_2.0_a_utilizar_08052012.docx.' in /home/kelluwen/public_html/app/concurso/lib/PHPWord/Writer/Word2007.php:158
+Stack trace:
+#0 /home/kelluwen/public_html/app/concurso/con_crearWord.php(395): PHPWord_Writer_Word2007->save('./data/Elija_un...')
+#1 {main}
+  thrown in /home/kelluwen/public_html/app/concurso/lib/PHPWord/Writer/Word2007.php on line 158
+[08-May-2012 10:42:00] PHP Fatal error:  Uncaught exception 'Exception' with message 'Could not close zip file ./data/Elija_un_nombre_que_conjugue_objetivos_de_aprendizaje_y_herramienta_2.0_a_utilizar_08052012.docx.' in /home/kelluwen/public_html/app/concurso/lib/PHPWord/Writer/Word2007.php:158
+Stack trace:
+#0 /home/kelluwen/public_html/app/concurso/con_crearWord.php(395): PHPWord_Writer_Word2007->save('./data/Elija_un...')
+#1 {main}
+  thrown in /home/kelluwen/public_html/app/concurso/lib/PHPWord/Writer/Word2007.php on line 158
+[08-May-2012 10:42:19] PHP Fatal error:  Uncaught exception 'Exception' with message 'Could not close zip file ./data/Elija_un_nombre_que_conjugue_objetivos_de_aprendizaje_y_herramienta_2.0_a_utilizar_08052012.docx.' in /home/kelluwen/public_html/app/concurso/lib/PHPWord/Writer/Word2007.php:158
+Stack trace:
+#0 /home/kelluwen/public_html/app/concurso/con_crearWord.php(395): PHPWord_Writer_Word2007->save('./data/Elija_un...')
+#1 {main}
+  thrown in /home/kelluwen/public_html/app/concurso/lib/PHPWord/Writer/Word2007.php on line 158
+[08-May-2012 10:45:04] PHP Fatal error:  Uncaught exception 'Exception' with message 'Could not close zip file ./data/ajijoas_08052012.docx.' in /home/kelluwen/public_html/app/concurso/lib/PHPWord/Writer/Word2007.php:158
+Stack trace:
+#0 /home/kelluwen/public_html/app/concurso/con_crearWord.php(395): PHPWord_Writer_Word2007->save('./data/ajijoas_...')
+#1 {main}
+  thrown in /home/kelluwen/public_html/app/concurso/lib/PHPWord/Writer/Word2007.php on line 158

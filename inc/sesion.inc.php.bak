@@ -1,0 +1,89 @@
+<?php
+
+/**
+ * Contiene variables y funciones de sesión
+ *
+ * LICENSE: código fuente distribuido con licencia LGPL
+ *
+ * @author  Daniel Guerra - Kelluwen
+ * @copyleft Kelluwen, Universidad Austral de Chile
+ * @license www.kelluwen.cl/app/licencia_kelluwen.txt
+ * @version 0.1
+ *
+ * */
+session_start();
+
+function crearSesion($id_usuario, $usuario, $inscribe_diseno, $nombre, $foto, $email,$mostrar_correo,$mostrar_fecha, $administrador) {
+    $_SESSION["klwn_id_usuario"] = $id_usuario;
+    $_SESSION["klwn_usuario"] = $usuario;
+    $_SESSION["klwn_inscribe_diseno"] = $inscribe_diseno;
+    $_SESSION["klwn_nombre"] = $nombre;
+    $_SESSION["klwn_foto"] = $foto;
+    $_SESSION["klwn_email"] = $email;
+    $_SESSION["klwn_mostrar_correo"]= $mostrar_correo;
+    $_SESSION["klwn_mostrar_fecha"]= $mostrar_fecha;
+    $_SESSION["klwn_administrador"]= $administrador;
+    date_default_timezone_set('America/Santiago');
+    $_SESSION["klwn_ultimo_acceso"] = date("Y-n-j H:i:s");
+    $_SESSION["id_exp_seleccionada"]= null;
+    
+}
+function actualizarSesion($nombre, $foto, $email,$mostrar_correo,$mostrar_fecha) {
+    $_SESSION["klwn_nombre"] = $nombre;
+    $_SESSION["klwn_foto"] = $foto;
+    $_SESSION["klwn_email"] = $email;
+    $_SESSION["klwn_mostrar_correo"]= $mostrar_correo;
+    $_SESSION["klwn_mostrar_fecha"]= $mostrar_fecha;
+}
+function agregarExperienciaSeleccionada ($id_experiencia){
+    $_SESSION["id_exp_seleccionada"]= $id_experiencia;
+}
+function agregarExperienciasSesion($_experiencias) {
+    $_SESSION["klwn_experiencias_inscritas"] = array();
+    $_SESSION["klwn_experiencias_inscritas"] = $_experiencias;
+}
+
+function eliminarSesion() {
+    unset($_SESSION["klwn_id_usuario"]);
+    unset($_SESSION["klwn_usuario"]);
+    unset($_SESSION["klwn_inscribe_diseno"]);
+    unset($_SESSION["klwn_nombre"]);
+    unset($_SESSION["klwn_foto"]);
+    unset($_SESSION["klwn_email"]);
+    unset($_SESSION["klwn_mostrar_correo"]);
+    unset($_SESSION["klwn_mostrar_fecha"]);
+    unset($_SESSION["klwn_ultimo_acceso"]);
+    unset($_SESSION["klwn_experiencias_inscritas"]);
+    unset($_SESSION["id_exp_seleccionada"]);
+    unset($_SESSION["klwn_administrador"]);
+}
+
+function existeSesion() {
+    return isset($_SESSION["klwn_usuario"]);
+}
+
+/* Retorna
+  1: el usuario de la sesión es profesor de la experiencia
+  2: el usuario de la sesión es estudiante de la experiencia
+  3: el usuario de la sesión es colaborador de la experiencia
+  -1: el usuario de la sesión no tiene esta experiencia
+ */
+
+function validaExperiencia($id_exp) {
+    $rol=null;
+    if (!isset($_SESSION["klwn_experiencias_inscritas"]) || is_null($_SESSION["klwn_experiencias_inscritas"])){
+        return -1;
+    }
+    foreach ($_SESSION["klwn_experiencias_inscritas"] as $exp) {
+        if ($exp["id_experiencia"] == $id_exp)
+            $rol= $exp["rol"];
+    }
+    if ($rol!=null){
+        return $rol;
+    }
+    else{
+        return -1;
+    }
+}
+
+?>

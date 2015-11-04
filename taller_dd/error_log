@@ -1,0 +1,258 @@
+[26-Oct-2014 20:28:40 America/Santiago] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in /home/kelluwen/public_html/app/taller_dd/tdd_crearZip.php on line 38
+[12-Nov-2014 00:02:25 America/Santiago] PHP Warning:  unlink(./../dd/actividades/2324/): No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/tdd_eliminarArchivo.php on line 25
+[14-Nov-2014 16:05:45 America/Santiago] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /Library/Server/Web/Data/Sites/app/taller_dd/tdd_crearZip.php on line 39
+[16-Nov-2014 21:55:28 America/Santiago] PHP Warning:  copy(./../dd/actividades/2324): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 36
+[16-Nov-2014 21:55:28 America/Santiago] PHP Warning:  copy(./../dd/actividades/2323): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 36
+[25-Nov-2014 18:44:56 America/Santiago] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /Library/Server/Web/Data/Sites/app/taller_dd/tdd_crearZip.php on line 38
+[27-Nov-2014 13:49:05 America/Santiago] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /Library/Server/Web/Data/Sites/app/taller_dd/tdd_crearZip.php on line 39
+[04-Dec-2014 16:03:27 America/Santiago] PHP Warning:  unlink(./../dd/actividades/2347/): No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/tdd_eliminarArchivo.php on line 25
+[05-Dec-2014 11:56:02 America/Santiago] PHP Warning:  unlink(./../dd/actividades/2386/Ficha 3 El 18 de octubre de 1914[1].doc): No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/tdd_eliminarArchivo.php on line 25
+[07-Dec-2014 00:54:53 America/Santiago] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /Library/Server/Web/Data/Sites/app/taller_dd/tdd_crearZip.php on line 39
+[07-Dec-2014 00:56:55 America/Santiago] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /Library/Server/Web/Data/Sites/app/taller_dd/tdd_crearZip.php on line 39
+[08-Dec-2014 01:07:19 America/Santiago] PHP Warning:  unlink(./../dd/actividades/2348/): No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/tdd_eliminarArchivo.php on line 25
+[08-Dec-2014 17:38:17 America/Santiago] PHP Warning:  unlink(./../dd/actividades/2348/): Operation not permitted in /Library/Server/Web/Data/Sites/app/taller_dd/tdd_eliminarArchivo.php on line 25
+[08-Dec-2014 20:36:41 America/Santiago] PHP Warning:  unlink(./../dd/actividades/2352/): No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/tdd_eliminarArchivo.php on line 25
+[09-Dec-2014 23:16:12 America/Santiago] PHP Warning:  unlink(./../dd/actividades/2348/): Operation not permitted in /Library/Server/Web/Data/Sites/app/taller_dd/tdd_eliminarArchivo.php on line 25
+[15-Dec-2014 01:48:37 America/Santiago] PHP Warning:  unlink(./../dd/actividades/2351/): Operation not permitted in /Library/Server/Web/Data/Sites/app/taller_dd/tdd_eliminarArchivo.php on line 25
+[30-Dec-2014 16:55:45 America/Santiago] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /Library/Server/Web/Data/Sites/app/taller_dd/tdd_crearZip.php on line 39
+[02-Jan-2015 17:46:32 America/Santiago] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /Library/Server/Web/Data/Sites/app/taller_dd/tdd_crearZip.php on line 38
+[04-Jan-2015 17:45:01 America/Santiago] PHP Warning:  unlink(./../dd/actividades/2355/): Operation not permitted in /Library/Server/Web/Data/Sites/app/taller_dd/tdd_eliminarArchivo.php on line 25
+[04-Jan-2015 18:38:05 America/Santiago] PHP Warning:  unlink(./../dd/actividades/2356/): Operation not permitted in /Library/Server/Web/Data/Sites/app/taller_dd/tdd_eliminarArchivo.php on line 25
+[04-Jan-2015 18:38:13 America/Santiago] PHP Warning:  unlink(./../dd/actividades/2356/): Operation not permitted in /Library/Server/Web/Data/Sites/app/taller_dd/tdd_eliminarArchivo.php on line 25
+[04-Jan-2015 19:14:32 America/Santiago] PHP Warning:  unlink(./../dd/actividades/2378/): No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/tdd_eliminarArchivo.php on line 25
+[06-Jan-2015 11:35:18 America/Santiago] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /Library/Server/Web/Data/Sites/app/taller_dd/tdd_crearZip.php on line 38
+[06-Jan-2015 11:41:15 America/Santiago] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /Library/Server/Web/Data/Sites/app/taller_dd/tdd_crearZip.php on line 39
+[06-Jan-2015 13:31:11 America/Santiago] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /Library/Server/Web/Data/Sites/app/taller_dd/tdd_crearZip.php on line 38
+[06-Jan-2015 20:31:06 America/Santiago] PHP Warning:  unlink(./../dd/actividades/2388/): No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/tdd_eliminarArchivo.php on line 25
+[06-Jan-2015 20:33:25 America/Santiago] PHP Warning:  unlink(./../dd/actividades/2388/): No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/tdd_eliminarArchivo.php on line 25
+[06-Jan-2015 20:34:00 America/Santiago] PHP Warning:  unlink(./../dd/actividades/2388/): No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/tdd_eliminarArchivo.php on line 25
+[06-Jan-2015 21:13:17 America/Santiago] PHP Warning:  unlink(./../dd/actividades/2388/): No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/tdd_eliminarArchivo.php on line 25
+[06-Jan-2015 22:00:21 America/Santiago] PHP Warning:  unlink(./../dd/actividades/2388/): No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/tdd_eliminarArchivo.php on line 25
+[06-Jan-2015 22:00:25 America/Santiago] PHP Warning:  unlink(./../dd/actividades/2388/): No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/tdd_eliminarArchivo.php on line 25
+[20-Jan-2015 19:41:06 America/Santiago] PHP Warning:  copy(./../dd/actividades/2414): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 36
+[20-Jan-2015 19:41:06 America/Santiago] PHP Warning:  copy(./../dd/actividades/2416): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 36
+[20-Jan-2015 19:41:06 America/Santiago] PHP Warning:  copy(./../dd/actividades/2419): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 36
+[16-Mar-2015 18:07:32 America/Santiago] PHP Warning:  copy(./../dd/actividades/1983): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 36
+[16-Mar-2015 18:07:32 America/Santiago] PHP Warning:  copy(./../dd/actividades/1984): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 36
+[16-Mar-2015 18:07:32 America/Santiago] PHP Warning:  copy(./../dd/actividades/1986): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 36
+[16-Mar-2015 18:07:33 America/Santiago] PHP Warning:  copy(./../dd/actividades/1989): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 36
+[16-Mar-2015 18:07:33 America/Santiago] PHP Warning:  copy(./../dd/actividades/1990): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 36
+[16-Mar-2015 18:07:33 America/Santiago] PHP Warning:  copy(./../dd/actividades/1991): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 36
+[25-Mar-2015 18:37:26 America/Santiago] PHP Warning:  copy(./../dd/actividades/1669): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 36
+[25-Mar-2015 18:37:26 America/Santiago] PHP Warning:  copy(./../dd/actividades/1665): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 36
+[25-Mar-2015 18:37:26 America/Santiago] PHP Warning:  copy(./../dd/actividades/1666): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 36
+[25-Mar-2015 18:37:26 America/Santiago] PHP Warning:  copy(./../dd/actividades/1677): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 36
+[25-Mar-2015 18:37:26 America/Santiago] PHP Warning:  copy(./../dd/actividades/1668): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 36
+[26-Mar-2015 12:26:46 America/Santiago] PHP Warning:  copy(./../dd/actividades/1983): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 36
+[26-Mar-2015 12:26:46 America/Santiago] PHP Warning:  copy(./../dd/actividades/1984): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 36
+[26-Mar-2015 12:26:46 America/Santiago] PHP Warning:  copy(./../dd/actividades/1986): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 36
+[26-Mar-2015 12:26:46 America/Santiago] PHP Warning:  copy(./../dd/actividades/1989): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 36
+[26-Mar-2015 12:26:46 America/Santiago] PHP Warning:  copy(./../dd/actividades/1990): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 36
+[26-Mar-2015 12:26:46 America/Santiago] PHP Warning:  copy(./../dd/actividades/1991): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 36
+[27-Mar-2015 16:43:23 America/Santiago] PHP Warning:  copy(./../dd/actividades/1968): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 36
+[27-Mar-2015 16:43:28 America/Santiago] PHP Warning:  copy(./../dd/actividades/1980): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 36
+[27-Mar-2015 16:43:31 America/Santiago] PHP Warning:  copy(./../dd/actividades/1972): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 36
+[27-Mar-2015 16:43:31 America/Santiago] PHP Warning:  copy(./../dd/actividades/1973): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 36
+[27-Mar-2015 16:43:31 America/Santiago] PHP Warning:  copy(./../dd/actividades/1975): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 36
+[27-Mar-2015 16:43:31 America/Santiago] PHP Warning:  copy(./../dd/actividades/1976): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 36
+[27-Mar-2015 16:43:31 America/Santiago] PHP Warning:  copy(./../dd/actividades/1977): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 36
+[27-Mar-2015 16:43:39 America/Santiago] PHP Warning:  copy(./../dd/actividades/1968): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 36
+[27-Mar-2015 16:43:42 America/Santiago] PHP Warning:  copy(./../dd/actividades/1980): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 36
+[27-Mar-2015 16:43:43 America/Santiago] PHP Warning:  copy(./../dd/actividades/1972): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 36
+[27-Mar-2015 16:43:43 America/Santiago] PHP Warning:  copy(./../dd/actividades/1973): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 36
+[27-Mar-2015 16:43:43 America/Santiago] PHP Warning:  copy(./../dd/actividades/1975): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 36
+[27-Mar-2015 16:43:43 America/Santiago] PHP Warning:  copy(./../dd/actividades/1976): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 36
+[27-Mar-2015 16:43:43 America/Santiago] PHP Warning:  copy(./../dd/actividades/1977): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 36
+[27-Mar-2015 16:44:10 America/Santiago] PHP Warning:  copy(./../dd/actividades/1968): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 36
+[27-Mar-2015 16:44:12 America/Santiago] PHP Warning:  copy(./../dd/actividades/1980): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 36
+[27-Mar-2015 16:44:13 America/Santiago] PHP Warning:  copy(./../dd/actividades/1972): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 36
+[27-Mar-2015 16:44:13 America/Santiago] PHP Warning:  copy(./../dd/actividades/1973): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 36
+[27-Mar-2015 16:44:13 America/Santiago] PHP Warning:  copy(./../dd/actividades/1975): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 36
+[27-Mar-2015 16:44:13 America/Santiago] PHP Warning:  copy(./../dd/actividades/1976): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 36
+[27-Mar-2015 16:44:13 America/Santiago] PHP Warning:  copy(./../dd/actividades/1977): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 36
+[27-Mar-2015 16:44:25 America/Santiago] PHP Warning:  copy(./../dd/actividades/1968): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 36
+[27-Mar-2015 16:44:27 America/Santiago] PHP Warning:  copy(./../dd/actividades/1980): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 36
+[27-Mar-2015 16:44:28 America/Santiago] PHP Warning:  copy(./../dd/actividades/1972): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 36
+[27-Mar-2015 16:44:28 America/Santiago] PHP Warning:  copy(./../dd/actividades/1973): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 36
+[27-Mar-2015 16:44:28 America/Santiago] PHP Warning:  copy(./../dd/actividades/1975): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 36
+[27-Mar-2015 16:44:28 America/Santiago] PHP Warning:  copy(./../dd/actividades/1976): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 36
+[27-Mar-2015 16:44:28 America/Santiago] PHP Warning:  copy(./../dd/actividades/1977): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 36
+[23-Apr-2015 18:09:33 America/Santiago] PHP Warning:  copy(./../dd/actividades/562): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 36
+[06-May-2015 20:54:07 America/Santiago] PHP Warning:  copy(./../dd/actividades/723): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 36
+[06-May-2015 20:54:07 America/Santiago] PHP Warning:  copy(./../dd/actividades/725): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 36
+[07-May-2015 11:41:57 America/Santiago] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /Library/Server/Web/Data/Sites/app/taller_dd/tdd_crearZip.php on line 39
+[07-May-2015 14:59:56 America/Santiago] PHP Warning:  copy(./../dd/actividades/529): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 36
+[07-May-2015 14:59:57 America/Santiago] PHP Warning:  copy(./../dd/actividades/537): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 36
+[08-May-2015 18:40:31 America/Santiago] PHP Warning:  copy(./../dd/actividades/2307): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 36
+[08-May-2015 18:40:34 America/Santiago] PHP Warning:  copy(./../dd/actividades/2312): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 36
+[08-May-2015 18:40:34 America/Santiago] PHP Warning:  copy(./../dd/actividades/2313): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 36
+[08-May-2015 18:40:34 America/Santiago] PHP Warning:  copy(./../dd/actividades/2314): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 36
+[12-May-2015 11:19:07 America/Santiago] PHP Warning:  copy(./../dd/actividades/2623): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 36
+[12-May-2015 11:19:10 America/Santiago] PHP Warning:  copy(./../dd/actividades/2629): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 36
+[12-May-2015 11:19:10 America/Santiago] PHP Warning:  copy(./../dd/actividades/2630): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 36
+[14-May-2015 11:54:09 America/Santiago] PHP Warning:  copy(./../dd/actividades/710): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 36
+[14-May-2015 11:54:09 America/Santiago] PHP Warning:  copy(./../dd/actividades/711): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 36
+[17-May-2015 21:03:42 America/Santiago] PHP Warning:  copy(./../dd/actividades/710): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 36
+[17-May-2015 21:03:42 America/Santiago] PHP Warning:  copy(./../dd/actividades/711): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 36
+[17-May-2015 21:07:04 America/Santiago] PHP Warning:  copy(./../dd/actividades/710): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 36
+[17-May-2015 21:07:04 America/Santiago] PHP Warning:  copy(./../dd/actividades/711): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 36
+[17-May-2015 21:25:27 America/Santiago] PHP Warning:  copy(./../dd/actividades/710): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 36
+[17-May-2015 21:25:27 America/Santiago] PHP Warning:  copy(./../dd/actividades/711): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 36
+[17-May-2015 21:52:42 America/Santiago] PHP Warning:  unlink(./../dd/actividades/2676/): Operation not permitted in /Library/Server/Web/Data/Sites/app/taller_dd/tdd_eliminarArchivo.php on line 25
+[17-May-2015 22:01:40 America/Santiago] PHP Warning:  unlink(./../dd/actividades/2676/E1_A1_M1_Proyecto_kelluwen_v2.ppt): No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/tdd_eliminarArchivo.php on line 25
+[17-May-2015 22:05:30 America/Santiago] PHP Warning:  unlink(./../dd/actividades/2676/): Operation not permitted in /Library/Server/Web/Data/Sites/app/taller_dd/tdd_eliminarArchivo.php on line 25
+[21-May-2015 23:40:39 America/Santiago] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /Library/Server/Web/Data/Sites/app/taller_dd/tdd_crearZip.php on line 39
+[16-Jun-2015 00:01:19 America/Santiago] PHP Warning:  unlink(./../dd/actividades/2560/): Operation not permitted in /Library/Server/Web/Data/Sites/app/taller_dd/tdd_eliminarArchivo.php on line 25
+[23-Jun-2015 08:08:43 America/Santiago] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /Library/Server/Web/Data/Sites/app/taller_dd/tdd_crearZip.php on line 39
+[23-Jun-2015 08:28:37 America/Santiago] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /Library/Server/Web/Data/Sites/app/taller_dd/tdd_crearZip.php on line 38
+[20-Aug-2015 15:38:17 America/Santiago] PHP Warning:  unlink(./../dd/actividades/2589/): No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/tdd_eliminarArchivo.php on line 25
+[20-Aug-2015 16:29:49 America/Santiago] PHP Warning:  unlink(./../dd/actividades/2576/): Operation not permitted in /Library/Server/Web/Data/Sites/app/taller_dd/tdd_eliminarArchivo.php on line 25
+[20-Aug-2015 17:53:05 America/Santiago] PHP Warning:  unlink(./../dd/actividades/2605/): No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/tdd_eliminarArchivo.php on line 25
+[20-Aug-2015 18:19:52 America/Santiago] PHP Warning:  unlink(./../dd/actividades/2587/): No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/tdd_eliminarArchivo.php on line 25
+[26-Aug-2015 22:23:11 America/Santiago] PHP Warning:  unlink(./../dd/actividades/2604/): Operation not permitted in /Library/Server/Web/Data/Sites/app/taller_dd/tdd_eliminarArchivo.php on line 25
+[27-Aug-2015 22:41:53 America/Santiago] PHP Warning:  unlink(./../dd/actividades/2615/): Operation not permitted in /Library/Server/Web/Data/Sites/app/taller_dd/tdd_eliminarArchivo.php on line 25
+[27-Aug-2015 22:41:55 America/Santiago] PHP Warning:  unlink(./../dd/actividades/2615/): Operation not permitted in /Library/Server/Web/Data/Sites/app/taller_dd/tdd_eliminarArchivo.php on line 25
+[27-Aug-2015 23:16:13 America/Santiago] PHP Warning:  unlink(./../dd/actividades/2617/): Operation not permitted in /Library/Server/Web/Data/Sites/app/taller_dd/tdd_eliminarArchivo.php on line 25
+[28-Aug-2015 00:01:17 America/Santiago] PHP Warning:  unlink(./../dd/actividades/2606/): Operation not permitted in /Library/Server/Web/Data/Sites/app/taller_dd/tdd_eliminarArchivo.php on line 25
+[24-Sep-2015 21:36:35 America/Santiago] PHP Warning:  copy(./../dd/actividades/1669): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 36
+[24-Sep-2015 21:36:35 America/Santiago] PHP Warning:  copy(./../dd/actividades/1665): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 36
+[24-Sep-2015 21:36:35 America/Santiago] PHP Warning:  copy(./../dd/actividades/1666): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 36
+[24-Sep-2015 21:36:35 America/Santiago] PHP Warning:  copy(./../dd/actividades/1677): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 36
+[24-Sep-2015 21:36:35 America/Santiago] PHP Warning:  copy(./../dd/actividades/1668): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 36
+[25-Sep-2015 09:45:25 America/Santiago] PHP Warning:  unlink(./../dd/actividades/2841/): Operation not permitted in /Library/Server/Web/Data/Sites/app/taller_dd/tdd_eliminarArchivo.php on line 25
+[25-Sep-2015 09:45:39 America/Santiago] PHP Warning:  unlink(./../dd/actividades/2841/): Operation not permitted in /Library/Server/Web/Data/Sites/app/taller_dd/tdd_eliminarArchivo.php on line 25
+[25-Sep-2015 11:15:44 America/Santiago] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /Library/Server/Web/Data/Sites/app/taller_dd/tdd_crearZip.php on line 39
+[25-Sep-2015 21:01:57 America/Santiago] PHP Warning:  copy(./../dd/actividades/794): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 41
+[25-Sep-2015 21:01:57 America/Santiago] PHP Warning:  copy(./../dd/actividades/768): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 41
+[25-Sep-2015 21:01:57 America/Santiago] PHP Warning:  copy(./../dd/actividades/767): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 41
+[25-Sep-2015 21:01:57 America/Santiago] Array
+(
+    [0] => Array
+        (
+            [ev_id_evaluacion] => 33
+            [ev_id_tipoevaluacion] => 3
+            [ev_id_rubrica] => 33
+            [evac_id_actividad] => 770
+            [evac_id_evaluacion] => 33
+            [rbenu_id_rubrica] => 33
+            [rbenu_id_enunciado] => 148
+            [rbenu_orden] => 1
+            [enu_id_enunciado] => 148
+            [enu_contenido] => El diaporama presenta un título llamativo.
+        )
+
+    [1] => Array
+        (
+            [ev_id_evaluacion] => 33
+            [ev_id_tipoevaluacion] => 3
+            [ev_id_rubrica] => 33
+            [evac_id_actividad] => 770
+            [evac_id_evaluacion] => 33
+            [rbenu_id_rubrica] => 33
+            [rbenu_id_enunciado] => 149
+            [rbenu_orden] => 2
+            [enu_id_enunciado] => 149
+            [enu_contenido] => El audio es un elemento importante del diaporama. 
+        )
+
+    [2] => Array
+        (
+            [ev_id_evaluacion] => 33
+            [ev_id_tipoevaluacion] => 3
+            [ev_id_rubrica] => 33
+            [evac_id_actividad] => 770
+            [evac_id_evaluacion] => 33
+            [rbenu_id_rubrica] => 33
+            [rbenu_id_enunciado] => 150
+            [rbenu_orden] => 3
+            [enu_id_enunciado] => 150
+            [enu_contenido] => La secuencia de las imágenes es novedosa y llamativa.
+        )
+
+    [3] => Array
+        (
+            [ev_id_evaluacion] => 33
+            [ev_id_tipoevaluacion] => 3
+            [ev_id_rubrica] => 33
+            [evac_id_actividad] => 770
+            [evac_id_evaluacion] => 33
+            [rbenu_id_rubrica] => 33
+            [rbenu_id_enunciado] => 151
+            [rbenu_orden] => 4
+            [enu_id_enunciado] => 151
+            [enu_contenido] => Existen textos pequeños y citas que acompañen las imágenes.
+        )
+
+    [4] => Array
+        (
+            [ev_id_evaluacion] => 33
+            [ev_id_tipoevaluacion] => 3
+            [ev_id_rubrica] => 33
+            [evac_id_actividad] => 770
+            [evac_id_evaluacion] => 33
+            [rbenu_id_rubrica] => 33
+            [rbenu_id_enunciado] => 152
+            [rbenu_orden] => 5
+            [enu_id_enunciado] => 152
+            [enu_contenido] => El diaporama permite identificar un tópico sobre los Derechos Humanos de manera clara.
+        )
+
+)
+
+[25-Sep-2015 21:01:57 America/Santiago] PHP Warning:  copy(./../dd/actividades/770): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 41
+[27-Sep-2015 21:35:06 America/Santiago] PHP Warning:  unlink(/Library/Server/Web/Data/Sites/app/taller_dd/inc/../../dd/actividades/2841/): Operation not permitted in /Library/Server/Web/Data/Sites/app/taller_dd/tdd_eliminarArchivo.php on line 25
+[27-Sep-2015 21:40:22 America/Santiago] PHP Warning:  unlink(/Library/Server/Web/Data/Sites/app/taller_dd/inc/../../dd/actividades/2837/): Operation not permitted in /Library/Server/Web/Data/Sites/app/taller_dd/tdd_eliminarArchivo.php on line 25
+[27-Sep-2015 21:40:25 America/Santiago] PHP Warning:  unlink(/Library/Server/Web/Data/Sites/app/taller_dd/inc/../../dd/actividades/2837/): Operation not permitted in /Library/Server/Web/Data/Sites/app/taller_dd/tdd_eliminarArchivo.php on line 25
+[28-Sep-2015 16:18:09 America/Santiago] PHP Warning:  Missing argument 8 for agregarRegistroCambio(), called in /Library/Server/Web/Data/Sites/app/taller_dd/tdd_agregarActividad.php on line 21 and defined in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 2505
+[28-Sep-2015 16:18:09 America/Santiago] PHP Warning:  mysql_query() expects parameter 2 to be resource, null given in /Library/Server/Web/Data/Sites/app/inc/db_functions.inc.php on line 68
+[28-Sep-2015 16:18:45 America/Santiago] PHP Warning:  Missing argument 8 for agregarRegistroCambio(), called in /Library/Server/Web/Data/Sites/app/taller_dd/tdd_agregarActividad.php on line 21 and defined in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 2505
+[28-Sep-2015 16:18:45 America/Santiago] PHP Warning:  mysql_query() expects parameter 2 to be resource, null given in /Library/Server/Web/Data/Sites/app/inc/db_functions.inc.php on line 68
+[28-Sep-2015 16:19:14 America/Santiago] PHP Warning:  Missing argument 8 for agregarRegistroCambio(), called in /Library/Server/Web/Data/Sites/app/taller_dd/tdd_agregarActividad.php on line 21 and defined in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 2505
+[28-Sep-2015 16:19:14 America/Santiago] PHP Warning:  mysql_query() expects parameter 2 to be resource, null given in /Library/Server/Web/Data/Sites/app/inc/db_functions.inc.php on line 68
+[28-Sep-2015 16:19:39 America/Santiago] PHP Warning:  Missing argument 8 for agregarRegistroCambio(), called in /Library/Server/Web/Data/Sites/app/taller_dd/tdd_agregarActividad.php on line 21 and defined in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 2505
+[28-Sep-2015 16:19:39 America/Santiago] PHP Warning:  mysql_query() expects parameter 2 to be resource, null given in /Library/Server/Web/Data/Sites/app/inc/db_functions.inc.php on line 68
+[28-Sep-2015 16:20:33 America/Santiago] PHP Warning:  Missing argument 8 for agregarRegistroCambio(), called in /Library/Server/Web/Data/Sites/app/taller_dd/tdd_agregarActividad.php on line 21 and defined in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 2505
+[28-Sep-2015 16:20:33 America/Santiago] PHP Warning:  mysql_query() expects parameter 2 to be resource, null given in /Library/Server/Web/Data/Sites/app/inc/db_functions.inc.php on line 68
+[28-Sep-2015 16:21:50 America/Santiago] PHP Warning:  Missing argument 8 for agregarRegistroCambio(), called in /Library/Server/Web/Data/Sites/app/taller_dd/tdd_agregarActividad.php on line 21 and defined in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 2505
+[28-Sep-2015 16:21:50 America/Santiago] PHP Warning:  mysql_query() expects parameter 2 to be resource, null given in /Library/Server/Web/Data/Sites/app/inc/db_functions.inc.php on line 68
+[28-Sep-2015 16:24:43 America/Santiago] PHP Warning:  Missing argument 8 for agregarRegistroCambio(), called in /Library/Server/Web/Data/Sites/app/taller_dd/tdd_agregarActividad.php on line 21 and defined in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 2505
+[28-Sep-2015 16:24:43 America/Santiago] PHP Warning:  mysql_query() expects parameter 2 to be resource, null given in /Library/Server/Web/Data/Sites/app/inc/db_functions.inc.php on line 68
+[28-Sep-2015 16:53:45 America/Santiago] PHP Warning:  Missing argument 8 for agregarRegistroCambio(), called in /Library/Server/Web/Data/Sites/app/taller_dd/tdd_agregarActividad.php on line 21 and defined in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 2505
+[28-Sep-2015 16:53:45 America/Santiago] PHP Warning:  mysql_query() expects parameter 2 to be resource, null given in /Library/Server/Web/Data/Sites/app/inc/db_functions.inc.php on line 68
+[28-Sep-2015 17:00:22 America/Santiago] PHP Warning:  Missing argument 8 for agregarRegistroCambio(), called in /Library/Server/Web/Data/Sites/app/taller_dd/tdd_agregarActividad.php on line 21 and defined in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 2505
+[28-Sep-2015 17:00:22 America/Santiago] PHP Warning:  mysql_query() expects parameter 2 to be resource, null given in /Library/Server/Web/Data/Sites/app/inc/db_functions.inc.php on line 68
+[28-Sep-2015 17:03:54 America/Santiago] PHP Warning:  Missing argument 8 for agregarRegistroCambio(), called in /Library/Server/Web/Data/Sites/app/taller_dd/tdd_agregarActividad.php on line 21 and defined in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 2505
+[28-Sep-2015 17:03:54 America/Santiago] PHP Warning:  mysql_query() expects parameter 2 to be resource, null given in /Library/Server/Web/Data/Sites/app/inc/db_functions.inc.php on line 68
+[28-Sep-2015 17:32:51 America/Santiago] PHP Warning:  Missing argument 8 for agregarRegistroCambio(), called in /Library/Server/Web/Data/Sites/app/taller_dd/tdd_agregarActividad.php on line 21 and defined in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 2505
+[28-Sep-2015 17:32:51 America/Santiago] PHP Warning:  mysql_query() expects parameter 2 to be resource, null given in /Library/Server/Web/Data/Sites/app/inc/db_functions.inc.php on line 68
+[28-Sep-2015 17:33:24 America/Santiago] PHP Warning:  Missing argument 8 for agregarRegistroCambio(), called in /Library/Server/Web/Data/Sites/app/taller_dd/tdd_agregarActividad.php on line 21 and defined in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 2505
+[28-Sep-2015 17:33:24 America/Santiago] PHP Warning:  mysql_query() expects parameter 2 to be resource, null given in /Library/Server/Web/Data/Sites/app/inc/db_functions.inc.php on line 68
+[28-Sep-2015 17:45:41 America/Santiago] PHP Warning:  Missing argument 8 for agregarRegistroCambio(), called in /Library/Server/Web/Data/Sites/app/taller_dd/tdd_agregarActividad.php on line 21 and defined in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 2505
+[28-Sep-2015 17:45:41 America/Santiago] PHP Warning:  mysql_query() expects parameter 2 to be resource, null given in /Library/Server/Web/Data/Sites/app/inc/db_functions.inc.php on line 68
+[29-Sep-2015 11:36:44 America/Santiago] PHP Warning:  copy(./../dd/actividades/794): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 41
+[29-Sep-2015 11:36:44 America/Santiago] PHP Warning:  copy(./../dd/actividades/768): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 41
+[29-Sep-2015 11:36:44 America/Santiago] PHP Warning:  copy(./../dd/actividades/767): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 41
+[29-Sep-2015 11:36:44 America/Santiago] PHP Warning:  copy(./../dd/actividades/770): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 41
+[29-Sep-2015 15:58:53 America/Santiago] PHP Warning:  copy(./../dd/actividades/1363): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 41
+[29-Sep-2015 15:58:53 America/Santiago] PHP Warning:  copy(./../dd/actividades/1364): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 41
+[29-Sep-2015 15:58:53 America/Santiago] PHP Warning:  copy(./../dd/actividades/1367): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 41
+[29-Sep-2015 15:59:30 America/Santiago] PHP Warning:  copy(./../dd/actividades/723): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 41
+[29-Sep-2015 15:59:30 America/Santiago] PHP Warning:  copy(./../dd/actividades/725): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 41
+[01-Oct-2015 20:44:12 America/Santiago] PHP Warning:  copy(./../dd/actividades/2900): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 41
+[01-Oct-2015 20:44:12 America/Santiago] PHP Warning:  copy(./../dd/actividades/2901): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 41
+[01-Oct-2015 20:44:12 America/Santiago] PHP Warning:  copy(./../dd/actividades/2917): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 41
+[01-Oct-2015 20:44:12 America/Santiago] PHP Warning:  copy(./../dd/actividades/2902): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 41
+[01-Oct-2015 20:44:12 America/Santiago] PHP Warning:  copy(./../dd/actividades/2904): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 41
+[01-Oct-2015 20:44:12 America/Santiago] PHP Warning:  copy(./../dd/actividades/2918): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 41
+[01-Oct-2015 21:50:50 America/Santiago] PHP Warning:  unlink(/Library/Server/Web/Data/Sites/app/taller_dd/inc/../../dd/actividades/2985/): No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/tdd_eliminarArchivo.php on line 25
+[13-Oct-2015 18:22:29 America/Santiago] PHP Warning:  copy(./../dd/actividades/2260): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 41
+[13-Oct-2015 18:22:33 America/Santiago] PHP Warning:  copy(./../dd/actividades/2269): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 41
+[13-Oct-2015 18:22:33 America/Santiago] PHP Warning:  copy(./../dd/actividades/2294): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 41
+[13-Oct-2015 18:49:04 America/Santiago] PHP Warning:  copy(./../dd/actividades/1982): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 41
+[13-Oct-2015 18:49:06 America/Santiago] PHP Warning:  copy(./../dd/actividades/1919): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 41
+[13-Oct-2015 18:49:06 America/Santiago] PHP Warning:  copy(./../dd/actividades/1920): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 41
+[13-Oct-2015 18:49:06 America/Santiago] PHP Warning:  copy(./../dd/actividades/1922): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 41
+[13-Oct-2015 18:49:06 America/Santiago] PHP Warning:  copy(./../dd/actividades/1923): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 41
+[13-Oct-2015 18:49:06 America/Santiago] PHP Warning:  copy(./../dd/actividades/1924): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 41
+[13-Oct-2015 18:54:13 America/Santiago] PHP Warning:  copy(./../dd/actividades/2373): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 41
+[13-Oct-2015 18:54:13 America/Santiago] PHP Warning:  copy(./../dd/actividades/2375): failed to open stream: No such file or directory in /Library/Server/Web/Data/Sites/app/taller_dd/inc/tdd_db_funciones.inc.php on line 41

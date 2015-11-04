@@ -1,0 +1,40 @@
+<?php
+
+//Agregado el 10-11-14
+function obtenerArrayExpGemelas($id_experiencia,$conexion){
+    $consulta_datos_experiencia='SELECT ed_id_diseno_didactico,ed_semestre,ed_anio
+                                 FROM experiencia_didactica
+                                 WHERE ed_id_experiencia='.$id_experiencia;
+
+    $res_consulta_experiencia = dbEjecutarConsulta($consulta_datos_experiencia,$conexion);
+    if ($res_consulta_experiencia){
+        if ($datos_experiencia = mysql_fetch_assoc($res_consulta_experiencia)){
+            $id_diseno_didactico=$datos_experiencia['ed_id_diseno_didactico'];
+            $semestre_experiencia=$datos_experiencia['ed_semestre'];
+            $anio_experiencia=$datos_experiencia['ed_anio'];
+        }
+    }
+
+    $consulta_experiencias='SELECT ed_id_experiencia , ed_curso , ed_colegio
+                            FROM  experiencia_didactica
+                            WHERE ed_id_diseno_didactico='.$id_diseno_didactico.
+                            ' AND ed_semestre="'.$semestre_experiencia.'"
+                              AND ed_anio='.$anio_experiencia;
+
+    $res_experiencias = dbEjecutarConsulta($consulta_experiencias,$conexion);
+    $lista_experiencias = array();
+    if($res_experiencias){
+        $i=0;
+        while ($experiencia = mysql_fetch_assoc($res_experiencias)){
+            $map_idexp_idjson[$experiencia['ed_id_experiencia']]['id']=$i;
+            $clase= $experiencia['ed_curso'].' de '.$experiencia['ed_colegio'];
+            $map_idexp_idjson[$experiencia['ed_id_experiencia']]['clase']=$clase;
+            //echo 'id experiencia '.$experiencia['ed_id_experiencia'].' clase '.$i.' nombre: '.$clase.'<br/>';
+            $i++;
+            array_push($lista_experiencias,$experiencia['ed_id_experiencia']);
+        }
+    }
+    return $lista_experiencias;
+}
+
+?>

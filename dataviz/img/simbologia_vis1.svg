@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="180"
+   height="100"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="simbologia_vis1.svg">
+  <defs
+     id="defs4">
+    <marker
+       inkscape:stockid="Arrow2Lstart"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Lstart"
+       style="overflow:visible">
+      <path
+         id="path3796"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(1.1,0,0,1.1,1.1,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mstart"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Mstart"
+       style="overflow:visible">
+      <path
+         id="path3802"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(0.6,0.6)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lstart"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lstart"
+       style="overflow:visible">
+      <path
+         id="path3778"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(0.8,0,0,0.8,10,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.1362901"
+     inkscape:cx="68.309993"
+     inkscape:cy="19.243381"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1366"
+     inkscape:window-height="706"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-952.3622)">
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3790"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"><flowRegion
+         id="flowRegion3792"><rect
+           id="rect3794"
+           width="55"
+           height="63.57143"
+           x="452.85715"
+           y="368.07648" /></flowRegion><flowPara
+         id="flowPara3796" /></flowRoot>    <path
+       style="fill:none;stroke:#000000;stroke-width:1.79410768;stroke-miterlimit:4;stroke-opacity:0.78431373;stroke-dasharray:5.3823229, 1.79410764;stroke-dashoffset:0"
+       d="m 32.578235,986.4433 c -10.544302,0 -19.040314,8.6219 -19.040314,19.1656 0,10.5438 8.496012,19.0403 19.040314,19.0403 10.544301,0 19.165579,-8.4965 19.165579,-19.0403 0,-10.5437 -8.621278,-19.1656 -19.165579,-19.1656 z"
+       id="path3810"
+       inkscape:connector-curvature="0" />
+    <path
+       sodipodi:type="arc"
+       style="fill:none;stroke:#000000;stroke-width:13.69560432;stroke-miterlimit:4;stroke-opacity:0.78431373;stroke-dasharray:41.0868139, 13.69560463;stroke-dashoffset:0"
+       id="path3812"
+       sodipodi:cx="200.71428"
+       sodipodi:cy="468.07648"
+       sodipodi:rx="78.571426"
+       sodipodi:ry="78.571426"
+       d="m 279.28571,468.07648 a 78.571426,78.571426 0 1 1 -157.14286,0 78.571426,78.571426 0 1 1 157.14286,0 z"
+       transform="matrix(0,0.12412742,-0.12412741,0,90.951102,988.2134)" />
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:0.78365383;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="60.514267"
+       y="1009.7716"
+       id="text4776-1"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4778-7"
+         x="60.514267"
+         y="1009.7716"
+         style="font-size:11px;font-weight:bold;fill:#000000;fill-opacity:0.78365383;-inkscape-font-specification:Sans Bold">Baja</tspan></text>
+    <path
+       style="fill:#ff6600;stroke:#ff6600;stroke-width:1.60052741;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 38.998388,986.7253 20.055325,0"
+       id="path4821-0-9"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#ff6600;stroke-width:1.60062969;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 38.814569,1002.871 20.035038,0"
+       id="path4821-0-9-1"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:0.78365383;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="60.457283"
+       y="993.5871"
+       id="text4776-1-7"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4778-7-4"
+         x="60.457283"
+         y="993.5871"
+         style="font-size:11px;font-weight:bold;fill:#000000;fill-opacity:0.78365383;-inkscape-font-specification:Sans Bold">Alta</tspan></text>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3828"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       transform="translate(0,1012.3622)"><flowRegion
+         id="flowRegion3830"><rect
+           id="rect3832"
+           width="117.14286"
+           height="50.357143"
+           x="-6.7857141"
+           y="-23.928572" /></flowRegion><flowPara
+         id="flowPara3834" /></flowRoot>    <text
+       xml:space="preserve"
+       style="font-size:11px;font-style:oblique;font-weight:bold;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Oblique"
+       x="12.414624"
+       y="1038.3787"
+       id="text4478"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4480"
+         x="12.414624"
+         y="1038.3787"><tspan
+           style="font-style:normal;-inkscape-font-specification:Sans Bold"
+           id="tspan4505">Participación en la bitácora </tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:11px;font-style:oblique;font-weight:bold;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Oblique"
+       x="12.556119"
+       y="1047.3291"
+       id="text4478-4"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4480-8"
+         x="12.556119"
+         y="1047.3291"
+         style="font-style:normal;-inkscape-font-specification:Sans Bold">(nro de mensajes y me gusta)</tspan></text>
+  </g>
+</svg>

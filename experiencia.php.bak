@@ -1,0 +1,204 @@
+<?php
+/**
+ * Despliega la información correspodiente a una experiencia didáctica,asi como tambien los módulos de gestión de
+ * avance, bitácora, historial bitácora, documentos y testimonios.
+ * El despliegue de las pestañas (módulos) depende del rol del usuario que ingresa, si este el profesor o colaborador
+ * tendrá una vista completa de los módulos disponibles (gestión de avance, bitácora, historial bitácora, documentos y
+ * testimonios), si el rol es de estudiante se muestra una vista simplificada (bitácora, historial bitácora y 
+ * gestión de avance).
+ * El ingreso a esta página es sólo para usuarios que tengan una sesión iniciada, si no es asi se direccciona
+ * a ingresar.php para que el usuario inicie sesión.
+ *
+ * Los parámetros solicitados son:
+ * $_REQUEST["codexp"]: identificador de la experiencia en la Base Datos
+ *
+ * LICENSE: código fuente distribuido con licencia LGPL
+ *
+ * @author  Daniel Guerra - Kelluwen
+ * @copyleft Kelluwen, Universidad Austral de Chile
+ * @license www.kelluwen.cl/app/licencia_kelluwen.txt
+ * @version 0.1
+ *
+ **/
+//Si la forma de acceder al script es mediante el navegador web entonces redirige a la pagina principal
+if (strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) != 'xmlhttprequest' && !isset($_SERVER['HTTP_REFERER']))header("Location:ingresar.php");
+
+$ruta_raiz = "./";
+require_once($ruta_raiz."conf/config.php");
+require_once($ruta_raiz."inc/all.inc.php");
+require_once($ruta_raiz."inc/verificar_sesion.inc.php");
+require_once($ruta_raiz. "encuestas/inc/en_db_functions.inc.php");
+
+$titulo_pagina = $lang_sufijo_titulo_paginas.$lang_experiencia_didactica;
+$descripcion_pagina = $lang_descripcion_pagina_experiencia_didactica;
+
+$error = 0;
+$error_msg = "";
+
+$id_experiencia = $_REQUEST["codexp"];
+agregarExperienciaSeleccionada($id_experiencia);
+
+if (is_null($id_experiencia) or strlen($id_experiencia) == 0){
+    $error = 1;
+    $error_msg = $lang_error_sin_codigo_experiencia;
+    header('Location: ingresar.php');
+}
+else{
+    $rol_esta_experiencia = validaExperiencia($id_experiencia);
+    $es_estudiante = ($rol_esta_experiencia == 2);
+    $es_observador = ($rol_esta_experiencia == -1);
+    $es_profesor = ($rol_esta_experiencia == 1);
+    $es_colaborador = ($rol_esta_experiencia == 3);
+
+    $conexion = dbConectarMySQL($config_host_bd,$config_usuario_bd,$config_password_bd,$config_bd);
+    $datos_experiencia = dbExpObtenerInfo($id_experiencia, $conexion);
+    $herramienta_experiencia = dbDisObtenerImagenHerramientaWebDD($datos_experiencia["id_dd"], $conexion);
+    $avance_experiencia = dbExpObtenerAvance($id_experiencia, $conexion);
+    $id_actividad = $avance_experiencia["ultima_actividad_id"];
+
+    if($es_profesor){
+        dbActualizarUltimoAccesoExperiencia($id_experiencia,date("Y-n-j H:i:s"), $conexion);
+    }
+    dbDesconectarMySQL($conexion);
+    if (is_null($datos_experiencia)){
+        $error = 2;
+        $error_msg = $lang_error_no_existe_experiencia;
+    }
+}
+require_once($ruta_raiz."inc/header.inc.php");
+// AQUI EL ESPACIO PARA LA ACCIÓN
+if ($error == 0){
+    $id_dd = $datos_experiencia["id_dd"];
+    $etiqueta_exp =  $datos_experiencia["etiqueta"];
+    $etiqueta_gemela =  $datos_experiencia["etiqueta_gemela"];
+?>
+<!-- SECCIÓN 1: INFORMACIÓN GENERAL DE LA EXPERIENCIA DIDÁCTICA Y LISTA DE ESTUDIANTES -->
+<div class="container_16">
+    <div class="grid_11" id="header_dd">
+        <?php
+        if(is_null($datos_experiencia["fecha_termino"])){
+        ?>
+        <div id="nombre_dd">
+            <h1 class="nombre_dd"><?php echo "<span class=\"gris_claro\">".$lang_estas_ejecutando."</span>: ".$datos_experiencia["nombre_dd"];?>
+                <?php
+                if(!is_null($herramienta_experiencia["enlace"])){
+                ?>
+                    <a href="<?php echo $herramienta_experiencia["enlace"];?>"  target="_blank">
+                        <img src="<?php echo $config_ruta_img_herramientas.$herramienta_experiencia["imagen"];?>" alt="<?php echo $herramienta_experiencia["nombre"];?>" title="<?php echo $herramienta_experiencia["nombre"];?>"></img>
+                    </a>
+                <?php
+                }
+                else{
+                ?>
+                    <img src="<?php echo $config_ruta_img_herramientas."no_herramienta.png";?>" alt="<?php echo "Plataforma Kelluwen";?>" title="<?php echo "Plataforma Kelluwen";?>"></img>
+                <?php
+                }
+                ?> 
+            </h1>
+        </div>
+        <?php  
+        }
+        else{
+        ?>
+        <div id="nombre_dd">
+            <h1 class="nombre_dd">
+                <?php echo "<span class=\"rojo_claro\">".$lang_experiencia_finalizada."</span>: ".$datos_experiencia["nombre_dd"];?>
+                <?php
+                if(!is_null($herramienta_experiencia["enlace"])){
+                ?>
+                    <a href="<?php echo $herramienta_experiencia["enlace"];?>"  target="_blank">
+                        <img src="<?php echo $config_ruta_img_herramientas.$herramienta_experiencia["imagen"];?>" alt="<?php echo $herramienta_experiencia["nombre"];?>" title="<?php echo $herramienta_experiencia["nombre"];?>"></img>
+                    </a>
+                <?php
+                }
+                else{
+                ?>
+                    <img src="<?php echo $config_ruta_img_herramientas."no_herramienta.png";?>" alt="<?php echo "Plataforma Kelluwen";?>" title="<?php echo "Plataforma Kelluwen";?>"></img>
+                <?php
+                }
+                ?> 
+            </h1>
+        </div>
+        <?php
+        }
+        ?>
+        
+    </div>
+    <div class="grid_5" >
+        <div id="curso_exp"><?php echo "<b>".$lang_curso."</b>: ".$datos_experiencia["curso"].", ".$datos_experiencia["colegio"].", ".$datos_experiencia["localidad"]."\n\r";?></div>
+        <div id="prof_exp"><?php echo "<b>".$lang_prof_responsable."</b>: ".$datos_experiencia["nombre_profesor"]."\n\r";?></div>
+    </div>    
+    <div class="clear"></div>
+</div>    
+<div class="container_16">
+    <div class="grid_16" id="caja_avance_exp"> 
+    </div>
+    <div class="clear"></div>
+    <div class="grid_10">
+    &nbsp;
+    </div>
+    <div class="grid_6">
+        <a id="boton_recargar_avance" href="#" class="boton_recargar" title="<?php echo $lang_recargar;?>"> <img src="<?php echo $config_ruta_img;?>recargar.png" alt="<?php echo $lang_recargar;?>" /></a>
+    </div>
+    <div class="clear"></div>
+    <!--  el div con el gif que indica que esta cargando  -->
+    <div id="dialogo_cargando">
+        <img id="imagen_carga" src="<?php echo $config_ruta_img;?>ajaxloader.gif" alt="<?php echo $lang_cargando;?>" />
+    </div>
+
+</div>
+<!-- SECCIÓN 2: TABS CON ACTIVIDADES Y BITÁCORA -->
+<div class="container_16">
+    <div id="tabs" class="grid_16">
+        <ul>
+<?php
+$tablink_lista_etapas = "<li><a href=\"exp_lista_etapas.php?codexp=".$id_experiencia."\">".$lang_tab_gestion."</a></li>";
+$tablink_bitacora = "<li><a href=\"exp_bitacora.php?codexp=".$id_experiencia."&et_exp=".$etiqueta_exp."&et_gemela=".$etiqueta_gemela."\">".$lang_tab_bitacora."</a></li>";
+$tablink_detalles = "<li><a href=\"exp_detalles.php?coddd=".$id_dd."&codexp=".$id_experiencia."&et_exp=".$etiqueta_exp."&et_gemela=".$etiqueta_gemela."\">".$lang_tab_detalles."</a></li>";
+$tablink_comentarios = "<li><a href=\"exp_comentarios.php?coddd=".$id_dd."&codexp=".$id_experiencia."&et_exp=".$etiqueta_exp."&et_gemela=".$etiqueta_gemela."\">".$lang_tab_testimonios."</a></li>";
+$tablink_revisionpares = "<li><a href=\"revpares/exp_revisionpares.php?codexp=".$id_experiencia."&et_exp=".$etiqueta_exp."&et_gemela=".$etiqueta_gemela."&es_estudiante=".$es_estudiante."\">".$lang_tab_trabajos."</a></li>";
+$tablink_revisionpares_profesor = "<li><a href=\"revpares/exp_revisionpares_profesor.php?codexp=".$id_experiencia."&et_exp=".$etiqueta_exp."&et_gemela=".$etiqueta_gemela."&es_estudiante=".$es_estudiante."\">".$lang_tab_trabajos."</a></li>";
+//$tablink_configuracion="<li><a href=\"configurar_diseno.php?codexpi=".$id_experienciarevpares/exp_revisionpares.php?codexp=".$id_experiencia."&et_exp=".$etiqueta_exp."&et_gemela=".$etiqueta_gemela."&es_estudiante=".$es_estudiante."\"."\">Configuraci&oacute;n</a></li>";
+$tablink_administracion="<li><a href=\"administrador_experiencia.php?codeexp=".$id_experiencia."\">Administraci&oacute;n</a></li>";
+$tablink_muro_diseno="<li class= \"md_tab_kellu\"><a  href=\"mural_diseno.php?codexp=".$id_experiencia."&coddd=".$id_dd."&id_actividad=".$id_actividad."\">Kellu - Muro</a></li>";
+if ($es_estudiante){
+    echo "            ".$tablink_bitacora."\n\r";
+    echo "            ".$tablink_lista_etapas."\n\r";
+    echo "            ".$tablink_revisionpares."\n\r";
+}
+else{
+    if($es_observador){
+        echo "            ".$tablink_lista_etapas."\n\r";
+        echo "            ".$tablink_bitacora."\n\r";
+        echo "            ".$tablink_detalles."\n\r";
+        echo "            ".$tablink_revisionpares_profesor."\n\r";
+    }
+    else{
+        echo "            ".$tablink_lista_etapas."\n\r";
+        echo "            ".$tablink_bitacora."\n\r";
+        echo "            ".$tablink_detalles."\n\r";
+    //    echo "            ".$tablink_comentarios."\n\r";
+        echo "            ".$tablink_revisionpares_profesor."\n\r";
+        echo "            ".$tablink_configuracion."\n\r";
+        echo "            ".$tablink_administracion."\n\r";
+        echo "            ".$tablink_muro_diseno."\n\r";
+    }
+
+}
+
+?>     
+        </ul>
+    </div>
+    <div class="clear"></div>
+</div>
+<?
+}
+else{
+?>
+<div class="container_12">
+    <?php echo mostrarError($error_msg." [".$error."]");?>
+</div>
+<?php
+}
+require_once($ruta_raiz."inc/footer.inc.php");
+?>

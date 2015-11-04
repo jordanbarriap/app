@@ -1,0 +1,404 @@
+.admin_boton_escoger_administrador{ font-size: 1.2em !important; background-color: #EDA541; border: medium none; border-radius: 0.3em 0.3em 0.3em 0.3em; color: #FFFFFF; cursor: pointer;  font-weight: 700; padding: 2px 4px; text-align: center; text-shadow: 0 2px rgba(0, 0, 0, 0.1);height: 50px; margin: 30px 10px 30px 10px; width: 270px}
+.admin_intro_incio{font-size: 1.2em; color: #666666; margin-left: 30px; font-weight: 700; margin-top: 20px}
+
+/*Listado experiencias*/
+.admin_contenido {overflow: hidden; padding: 15px 15px 15px;}
+#admin_listado_experiencias{width: 90%}
+.admin_cuadro_experiencia{margin-bottom: 20px; border-radius: 2px 2px 2px 2px; box-shadow: 0 1px 0 #AAAAAA;}
+.admin_filtros_sector{margin: 45px 0 30px 15px}
+.admin_bloque_filtros_sector{margin-bottom: 30px}
+.admin_li_filtro_sector{float: left; list-style-type: none; margin-left: 0px}
+.admin_filtro_sector{cursor: pointer; color: #444444; margin-right: 15px; font-size: 1.2em!important; text-align: center; font-weight: normal; text-decoration: underline;}
+.admin_cuadro_exp_nombre_dd{color: #DA5814;font-size: 1.2em; font-weight: 400; padding-right: 2px;cursor: pointer}
+.admin_ir{ background-color: #7A923B; border: medium none; border-radius: 0.3em 0.3em 0.3em 0.3em; color: #FFFFFF; cursor: pointer; float: right; font-weight: 700; padding: 2px 4px; text-align: center; text-shadow: 0 2px rgba(0, 0, 0, 0.1);}
+.admin_bloque_filtros_sector li.admin_selected a{color:#EDA541!important;  font-weight:bold!important;}
+.admin_volver_experiencias{float: right; margin: 0 40px 10px 0}
+.admin_boton_volver{background: none;border:medium none; color: #EDA541 ;cursor:pointer; font-size:1.2em!important ;padding:8px 12px;text-align:center; font-weight: bold; text-decoration: underline;margin-right: 30px}
+.en_curso{background-color:#BAC699;}
+
+#admin_nombre_dd{padding:15px 15px 0px 15px;  margin: 10px 0 0 0; width: 70% }
+h1.admin_nombre_dd{margin:0;padding:0;font:18px Verdana,'Helvetica Neue',Arial,'Liberation Sans',FreeSans,sans-serif;color:#333; }
+img.admin_avatar{width: 30px; height: 30px; vertical-align:middle; float: left}
+.admin_info_exp {color: #444444; font-size: 1.1em}
+.admin_accordion{margin: 0 40px 20px 10px; font-size: 1.1em; width: 90%}
+
+.admin_ficha_contenido_titulo_c{background-color: #EDEDE9; font-weight: 700;  color: #666666; position: relative; border-top-left-radius: 6px;
+                          border-top-right-radius: 6px;  border-bottom-left-radius: 6px;   border-bottom-right-radius: 6px;border: 0 solid #CDCDBF;
+                          cursor: pointer;margin-top: 4px; position: relative;}
+.admin_ficha_contenido_titulo_a{background-color: #EDEDE9; font-weight: 700;  color: #666666; position: relative; border-top-left-radius: 6px;
+                          border-top-right-radius: 6px;border: 0 solid #CDCDBF;cursor: pointer; margin-top: 4px;position: relative;}
+.admin_titulo_f{padding: 0.5em 0.5em 0.5em 1em; text-align: left}
+.admin_ficha_contenido_c {padding: 0.5em 0.5em 0.5em 1.2em; background-color: #F4F4F2; border-bottom-left-radius: 6px; border-bottom-right-radius: 6px;}
+
+.form_admin_experiencia{width: 90%; float: left; margin: 5px; font-size: 1.1em; color: #666666}
+.form_admin_experiencia label{width: 200px!important; float: left}
+/*.form_admin_experiencia .error{color:#DA5814;font-size:0.9em;float: left; margin-left: 200px}*/
+.form_admin_experiencia input{width: 300px; float: left}
+.form_admin_experiencia select{width: 150px; float: left}
+.admin_exp_guardar{background:url('../../img/save.png') no-repeat;}
+.admin_exp_editar{background:url('../../img/editar.png') no-repeat;}
+.admin_experiencia{margin-left: 10px; height: 25px; width: 25px!important; float: left!important; background-color: #7A923B; border: medium none; border-radius: 0.3em 0.3em 0.3em 0.3em; color: #FFFFFF; cursor: pointer; ; padding: 2px 4px; text-align: center;}
+.admin_ficha_contenido_c {padding: 1.5em ; background-color: #F4F4F2; border-bottom-left-radius: 6px; border-bottom-right-radius: 6px;}
+.admin_boton_eliminar_experiencia{margin-top: 10px; width: 170px; height: 25px; font-size: 1em !important; float: left; background-color: #7A923B; border: medium none; border-radius: 0.3em 0.3em 0.3em 0.3em; color: #FFFFFF; cursor: pointer; font-weight: 700; padding: 2px 4px; text-align: center; text-shadow: 0 2px rgba(0, 0, 0, 0.1);}
+#dialogo_eliminar_experiencia p {color: #666666; font-size: 1.2em; font-weight: 400; margin-top: 15px}
+
+.admin_agregar_colaborador{margin-top: 10px; width: 170px; height: 25px; font-size: 1em !important; float: left; background-color: #7A923B; border: medium none; border-radius: 0.3em 0.3em 0.3em 0.3em; color: #FFFFFF; cursor: pointer; font-weight: 700; padding: 2px 4px; text-align: center; text-shadow: 0 2px rgba(0, 0, 0, 0.1);}
+.admin_eliminar_colaborador{background:url('../../img/delete.png') no-repeat; margin-left: 10px; height: 25px; width: 25px!important; float: left; background-color: #7A923B; border: medium none; border-radius: 0.3em 0.3em 0.3em 0.3em; color: #FFFFFF; cursor: pointer; font-weight: 700; padding: 2px 4px; text-align: center;}
+.admin_nombre_profesor{float: left; width: 250px; padding-left: 5px}
+.admin_col_sugerencia{float: left; width: 250px; padding-left: 5px}
+.admin_bloque_colaborador{float: left; padding: 5px}
+.tabla_colaboradores{width: 50%; background-color: #FFFFFF; border: 1px solid #CDCDBF; border-radius: 0.4em 0.4em 0.4em 0.4em; margin: 10px 0 20px; padding: 0;}
+.admin_exp_intro_listado_colaboradores{color: #666666; font-size: 1.1em!important; margin-top: 10px}
+.t_admin_colaboradores{margin:0px; }
+.t_admin_colaboradores thead td{padding:5px 10px}
+.t_admin_colaboradores tbody tr{border-bottom: 1px solid #CBCBBF;}
+.t_admin_colaboradores tbody td{padding:5px 15px;vertical-align:top}
+.t_admin_colaboradores thead td.col1_colaboradores{color:#444444;font-weight:700;background-color:#F4F4F2;border-bottom:1px solid #CDCDBF;border-top:1px solid #CDCDBF}
+.t_admin_colaboradores td.col1_colaboradores{width:40%}
+
+.t_admin_posibles_colaboradores{width:90%;margin:0; margin-top: 0px}
+.t_admin_posibles_colaboradores thead td{padding:5px 10px}
+.t_admin_posibles_colaboradores tbody tr{border-bottom: 1px solid #CBCBBF;}
+.t_admin_posibles_colaboradores tbody td{padding:5px 15px;vertical-align:top}
+.t_admin_posibles_colaboradores thead td.col1_posibles_colaboradores{color:#444444;font-weight:700;background-color:#F4F4F2;border-bottom:1px solid #CDCDBF;border-top:1px solid #CDCDBF}
+.t_admin_posibles_colaboradores td.col1_posibles_colaboradores{width:40%}
+.admin_agregar_co{margin-left: 10px; width: 170px!important; float: left; background-color: #7A923B; border: medium none; border-radius: 0.3em 0.3em 0.3em 0.3em; color: #FFFFFF; cursor: pointer; font-weight: 700; padding: 2px 4px; text-align: center; text-shadow: 0 2px rgba(0, 0, 0, 0.1);}
+.admin_colaborador_ver_mas_boton{background-color: #F4F4F2;border: medium none;border-radius: 0.5em 0.5em 0.5em 0.5em;color: #444444;cursor: pointer;font-size: 1.2em;font-weight: 700;height: 30px; width: 90%}
+.admin_exp_busqueda_colaborador{background: none;border:medium none; color: #EDA541 ;cursor:pointer; font-size:1em!important ;padding:8px 12px 0 0;text-align:left; font-weight: bold; text-decoration: underline;float: left;margin-left: 0px; font-size: 1em !important; margin-bottom: 10px;}
+#caja_form_busqueda_colaborador{overflow:hidden;margin-bottom: 5px;}
+#caja_form_busqueda_colaborador label{float:left;text-align:left;width:70px;padding:4px;font-weight:lighter;font-size:1em;color:#666666; margin-bottom: 5px}
+#caja_form_busqueda_colaborador input{float:left;padding:4px;width:150px;font-size:1em;border:1px solid #cdcdbf;  margin-bottom: 5px}
+#caja_form_busqueda_colaborador p{float:right;padding:4px;width:150px;font-size:1em;color:#EA5200}
+#caja_form_busqueda_colaborador label.error{background:url("../img/error.png") no-repeat scroll left center transparent;color:#DA5814;font-size:0.9em;margin:-5px 0 0 58px;width:382px;padding-left:20px}
+#caja_form_busqueda_colaborador label.sugerencia{background:url("../img/alert.png") no-repeat scroll left center transparent;color:#DA5814;font-size:0.9em;margin:-5px 0 0 75px;width:382px;}
+#dialogo_eliminar_colaborador p{color: #666666; font-size: 1.2em; font-weight: 400; margin: 15px}
+#caja_form_busqueda_colaborador input.submit{-moz-border-radius:.5em;background-color:#7A923B;border:medium none;color:#FFF;cursor:pointer;font-size:1em;font-weight:600;height:20px;padding:2px 4px;text-align:center;width:70px; float: left;margin-bottom: 5px}
+#admin_ventana_colaboradores{margin-bottom: 15px}
+#admin_ventana_colaboradores p{color: #666666; font-size: 1.2em; font-weight: 400; margin-top: 15px}
+
+.admin_exp_estudiantes{margin-bottom: 10px; font-size: 1.1em; color: #666666}
+.admin_estudiante_editar{background:url('../../img/editar.png') no-repeat;margin-left: 10px; height: 25px!important; width: 25px!important; float: left; background-color: #7A923B; border: medium none; border-radius: 0.3em 0.3em 0.3em 0.3em; color: #FFFFFF; cursor: pointer; font-weight: 700; padding: 2px 4px; text-align: center;}
+.admin_estudiante_guardar{background:url('../../img/save.png') no-repeat;margin-left: 10px; height: 25px!important; width: 25px!important; float: left; background-color: #7A923B; border: medium none; border-radius: 0.3em 0.3em 0.3em 0.3em; color: #FFFFFF; cursor: pointer; font-weight: 700; padding: 2px 4px; text-align: center;}
+.admin_estudiante_eliminar{background:url('../../img/delete.png') no-repeat;margin-left: 10px; height: 25px!important; width: 25px!important; float: left; background-color: #7A923B; border: medium none; border-radius: 0.3em 0.3em 0.3em 0.3em; color: #FFFFFF; cursor: pointer; font-weight: 700; padding: 2px 4px; text-align: center;}
+.admin_estudiante_resetear{margin-left: 10px; width: 150px!important; height: 25px!important; float: left; background-color: #7A923B; border: medium none; border-radius: 0.3em 0.3em 0.3em 0.3em; color: #FFFFFF; cursor: pointer; font-weight: 700; padding: 2px 4px; text-align: center; text-shadow: 0 2px rgba(0, 0, 0, 0.1);}
+.admin_estudiante_nombre{float:left; margin-left: 5px}
+.admin_estudiante_usuario{float: left; margin-left: 5px}
+.admin_bloque_estudiante{margin-bottom: 3px;}
+.dialogo_opciones_estudiante p{color: #666666; font-size: 1.2em; font-weight: 400; margin: 15px}
+.admin_exp_busqueda_estudiante{background: none;border:medium none; color: #EDA541 ;cursor:pointer; font-size:1em!important ;padding:8px 12px 0 0;text-align:left; font-weight: bold; text-decoration: underline;float: left;margin-left: 0px; font-size: 1em !important; margin-bottom: 10px;}
+
+.admin_exp_accordion{margin: 20px; width: 90%}
+/*BUSQUEDA ESTUDIANTES*/
+#caja_form_busqueda_estudiante{overflow:hidden;margin-bottom: 5px;}
+#caja_form_busqueda_estudiante label{margin-bottom:5px;float:left;text-align:left;width:170px;padding:4px;font-weight:lighter;font-size:1em;color:#666666}
+#caja_form_busqueda_estudiante input{margin-bottom:5px;float:left;padding:4px;width:200px;font-size:1em;border:1px solid #cdcdbf}
+#caja_form_busqueda_estudiante p{float:right;padding:4px;width:200px;font-size:1em;color:#EA5200}
+#caja_form_busqueda_estudiante label.error{background:url("../img/error.png") no-repeat scroll left center transparent;color:#DA5814;font-size:0.9em;margin:-5px 0 0 208px;width:382px;padding-left:20px}
+#caja_form_busqueda_estudiante label.sugerencia{background:url("../img/alert.png") no-repeat scroll left center transparent;color:#DA5814;font-size:0.9em;margin:-5px 0 0 208px;width:382px;padding-left:20px}
+#caja_form_busqueda_estudiante input.submit{-moz-border-radius:.5em;background-color:#7A923B;border:medium none;color:#FFF;cursor:pointer;font-size:1em;font-weight:600;height:25px;padding:2px 4px;text-align:center;width:100px; float: left;margin-left: 290px}
+
+.admin_usuario_boton_volver_inicio{background: none;border:medium none; color: #EDA541 ;cursor:pointer; font-size:1.2em!important ;padding:8px 12px;text-align:center; font-weight: bold; text-decoration: underline;float: right;margin-right: 150px}
+.admin_exp_boton_volver_inicio{background: none;border:medium none; color: #EDA541 ;cursor:pointer; font-size:1.2em!important ;padding:8px 12px;text-align:center; font-weight: bold; text-decoration: underline;float: right;margin-right: 70px}
+/*ADMINISRACIÓN DE USUARIOS*/
+/*.admin_filtros_usuario{margin: 0 0 35px 10px}*/
+
+.admin_li_filtro_usuario{float: left; list-style-type: none; margin-left: 0px; }
+.admin_filtro_usuario{cursor: pointer; color: #444444; margin-right: 15px; font-size: 1.2em!important; text-align: center; font-weight: normal; text-decoration: none;}
+.admin_bloque_filtros_usuarios{ margin-left: 10px }
+.admin_bloque_filtros_usuarios li.admin_selected a{color:#EDA541!important;  font-weight:bold!important; text-decoration: underline;}
+.admin_usuario_tabla {margin-bottom: 0px!important}
+.admin_usuario_tabla thead{margin-bottom: 10px}
+.admin_usuario_tabla thead td.utabla_col_nombre{color:#444444;font-weight:700;background-color:#F4F4F2;border-bottom:1px solid #CDCDBF;border-top:1px solid #CDCDBF;}
+.admin_usuario_tabla thead td.utabla_col_usuario,.admin_usuario_tabla thead td.utabla_col_rol, .admin_usuario_tabla thead td.utabla_col_opciones{color:#444444;font-weight:700;background-color:#F4F4F2;border-bottom:1px solid #CDCDBF;border-top:1px solid #CDCDBF;padding-left: 10px}
+.admin_usuario_tabla tbody td{vertical-align:top; padding-top: 5px ; }
+
+.admin_listado_usuarios{width: 90%; margin-left: 10px}
+.admin_usuario_editar{background:url('../../img/editar.png') no-repeat;margin-left: 10px; height: 25px!important; width: 25px!important; float: left; background-color: #7A923B; border: medium none; border-radius: 0.3em 0.3em 0.3em 0.3em; color: #FFFFFF; cursor: pointer; font-weight: 700; padding: 2px 4px; text-align: center;}
+.admin_usuario_guardar{background:url('../../admin/img/save.png') no-repeat;margin-left: 10px; height: 25px!important; width: 25px!important; float: left; background-color: #7A923B; border: medium none; border-radius: 0.3em 0.3em 0.3em 0.3em; color: #FFFFFF; cursor: pointer; font-weight: 700; padding: 2px 4px; text-align: center;}
+.admin_usuario_eliminar{background:url('../../admin/img/delete.png') no-repeat;margin-left: 10px; height: 25px!important; width: 25px!important; float: left; background-color: #7A923B; border: medium none; border-radius: 0.3em 0.3em 0.3em 0.3em; color: #FFFFFF; cursor: pointer; font-weight: 700; padding: 2px 4px; text-align: center;}
+.admin_usuario_inactivo{background:url('../../admin/img/no_activo.png') no-repeat;margin-left: 10px; height: 25px!important; width: 25px!important; float: left; background-color: #EDA541; border: medium none; border-radius: 0.3em 0.3em 0.3em 0.3em; color: #FFFFFF; cursor: pointer; font-weight: 700; padding: 2px 4px; text-align: center;}
+.admin_usuario_resetear{margin-left: 10px; width: 150px!important; height: 25px!important; float: left; background-color: #7A923B; border: medium none; border-radius: 0.3em 0.3em 0.3em 0.3em; color: #FFFFFF; cursor: pointer; font-weight: 700; padding: 2px 4px; text-align: center; text-shadow: 0 2px rgba(0, 0, 0, 0.1);}
+.admin_usuario_nombre{float:left; margin-left: 5px}
+.admin_usuario_usuario{float: left; margin-left: 10px}
+.admin_usuario_estudiante{margin-bottom: 3px;}
+.admin_usuario_ver_mas_boton{background-color: #F4F4F2;border: medium none;border-radius: 0.5em 0.5em 0.5em 0.5em;color: #444444;cursor: pointer;font-size: 1.2em;font-weight: 700;height: 30px; width: 760px;}
+.admin_usuario_rol{margin-left: 10px}
+/*Admin Usuario: Editar usuario*/
+#dialogo_guardar_usuario p{color: #666666; font-size: 1.2em; font-weight: 400; margin: 15px}
+/*Admin Usuario: eliminar usuario*/
+#dialogo_eliminar_usuario p {color: #666666; font-size: 1.2em; font-weight: 400; margin: 15px}
+ /*Admin Usuario: resetear contraseña */
+ #dialogo_resetear_contrasena_admin_usuario p{color: #666666; font-size: 1.2em; font-weight: 400; margin: 15px}
+.admin_resp_cambio_pass{margin-top:10px;background-color:#fff;border:2px solid #cdcdbf;padding:20px;-webkit-border-radius:1.6em;-moz-border-radius:1.1em; font-size:2.5em;font-weight:700; text-align: center;}
+/*BUSQUEDA DE USUARIO*/
+
+#caja_form_admin_busqueda{overflow:hidden;}
+#caja_form_admin_busqueda label{margin-top:5px;margin-bottom:5px;float:left;text-align:left;width:200px;padding:4px;font-weight:lighter;font-size:1em;color:#333}
+#caja_form_admin_busqueda input{margin-top:5px;margin-bottom:5px;float:left;padding:4px;width:250px;font-size:1em;border:1px solid #cdcdbf}
+#caja_form_admin_busqueda select{float:left;padding:4px;font-size:1em;color:#333}
+#caja_form_admin_busqueda p{float:right;padding:4px;width:200px;font-size:1em;color:#EA5200}
+#caja_form_admin_busqueda table{padding:0;border-bottom:0}
+#caja_form_admin_busqueda button{float:right}
+#caja_form_admin_busqueda textarea{float:left;text-align:left;width:250px;padding:4px;font-size:.8em}
+#caja_form_admin_busqueda input#check_acepto{float:left}
+#caja_form_admin_busqueda label.error{background:url("../img/error.png") no-repeat scroll left center transparent;color:#DA5814;font-size:0.9em;margin:-5px 0 0 208px;width:382px;padding-left:20px}
+#caja_form_admin_busqueda label.sugerencia{background:url("../img/alert.png") no-repeat scroll left center transparent;color:#DA5814;font-size:0.9em;margin:-5px 0 0 208px;width:382px;padding-left:20px}
+#caja_form_admin_busqueda input.submit{-moz-border-radius:.5em;background-color:#7A923B;border:medium none;color:#FFF;cursor:pointer;font-size:1.1em;font-weight:700;height:40px;margin:20px 0 40px 288px;padding:2px 4px;text-align:center;width:180px}
+/*CREAR UN NUEVO USUARIO*/
+#intro_crear_usuario{font-size:1.5em;font-weight:700;padding-bottom:15px}
+#admin_caja_form_crear_usuario{overflow:hidden;}
+#admin_caja_form_crear_usuario label{margin-top:5px;margin-bottom:5px;float:left;text-align:left;width:200px;padding:4px;font-weight:lighter;font-size:1em;color:#333}
+#admin_caja_form_crear_usuario input{margin-top:5px;margin-bottom:5px;float:left;padding:4px;width:250px;font-size:1em;border:1px solid #cdcdbf}
+#admin_caja_form_crear_usuario select{float:left;padding:4px;font-size:1em;color:#333}
+#admin_caja_form_crear_usuario p{float:right;padding:4px;width:200px;font-size:1em;color:#EA5200}
+#admin_caja_form_crear_usuario table{padding:0;border-bottom:0}
+#admin_caja_form_crear_usuario button{float:right}
+#admin_caja_form_crear_usuario textarea{float:left;text-align:left;width:250px;padding:4px;font-size:.8em}
+#admin_caja_form_crear_usuario input#check_acepto{float:left}
+#admin_caja_form_crear_usuario label.error{background:url("../img/error.png") no-repeat scroll left center transparent;color:#DA5814;font-size:0.9em;margin:-5px 0 0 208px;width:382px;padding-left:20px}
+#admin_caja_form_crear_usuario label.sugerencia{background:url("../img/alert.png") no-repeat scroll left center transparent;color:#DA5814;font-size:0.9em;margin:-5px 0 0 208px;width:382px;padding-left:20px}
+#admin_caja_form_crear_usuario input.submit{-moz-border-radius:.5em;background-color:#7A923B;border:medium none;color:#FFF;cursor:pointer;font-size:1.1em;font-weight:700;height:40px;margin:20px 0 40px 288px;padding:2px 4px;text-align:center;width:180px}
+#dialogo_vincular_usuario_exp p{color: #666666; font-size: 1.2em; font-weight: 400; margin: 15px}
+.admin_usuario_select_rol{margin-left: 20px; font-size: 1.2em!important; color: #666666}
+.admin_usuario_creado{margin-top: 10px}
+.admin_usuario_boton_vincular{ background-color: #7A923B; border: medium none; border-radius: 0.3em 0.3em 0.3em 0.3em; color: #FFFFFF; cursor: pointer; float: right; font-weight: 700; padding: 2px 4px; text-align: center; text-shadow: 0 2px rgba(0, 0, 0, 0.1); width: 170px}
+.admin_usuario_boton_vinculado{ background-color: #EDA541; border: medium none; border-radius: 0.3em 0.3em 0.3em 0.3em; color: #FFFFFF; cursor: pointer; float: right; font-weight: 700; padding: 2px 4px; text-align: center; text-shadow: 0 2px rgba(0, 0, 0, 0.1);width: 170px}
+.admin_cuadro_experiencia_asignar_usuario{margin-left: 10px; margin-bottom: 20px; border-radius: 2px 2px 2px 2px; box-shadow: 0 1px 0 #AAAAAA;width: 700px}
+.admin_usuario_creado_intro{margin-top: 10px; margin-left: 10px; font-size: 1.2em}
+.admin_img_usuario_creado{float: left; margin-left: 10px; margin-top: 10px}
+.admin_usuario_creado_datos{margin-top: 10px; float: left; margin-left: 5px}
+.admin_usuario_creado_intro_exp p{margin: 20px 0 10px 10px; font-size: 1.2em}
+
+
+/*Herramienta de reportes*/
+.admin_titulo_reportes{
+    margin: 30px 0px 0px 10px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.admin_cuadro_reportes{
+    margin-left: 10px;
+}
+
+.admin_h_reporte_iz{
+    float:left;
+    width: 50%;
+}
+
+.admin_h_reporte_der{
+    float:right;
+    width: 50%;
+}
+
+.admin_titulo_cuadro{
+    font-size: 1.2em;
+}
+
+.admin_ingresa_profesor{
+    margin-top: 20px;
+    width: 60%;
+}
+
+.admin_usuario_seguir{
+    margin: 19px 40px 0px 0px;
+    width: 120px!
+    important;
+    height: 25px!important;
+    float: left;
+    background-color: #7A923B;
+    border: medium none;
+    border-radius: 0.3em 0.3em 0.3em 0.3em;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 0 2px rgba(0, 0, 0, 0.1);
+    float:right;
+}
+
+.admin_tabla_reporteados{
+    margin-top: 20px;
+    webkit-border-radius:.4em;
+    -moz-border-radius:.4em;
+    padding:0;
+    background-color:#fff;
+    border:1px solid #cdcdbf;
+    width: 90%;
+}
+
+.admin_cabecera_tabla{
+   font-size: 1.1em;
+   font-weight:700;
+   padding:5px 8px;
+   border-bottom:1px solid #cdcdbf;
+}
+
+.admin_campo_tabla{
+   font-size: 1.1em;
+   padding:5px 8px;
+   
+}
+
+.admin_t_lista_profesores{
+  width:100%;
+  margin-bottom: 0px;
+}
+
+admin_borde_fondo{
+    border-bottom:1px solid #cdcdbf;
+}
+
+/*SOLICITUDES*/
+.admin_bonton_ver_solicitudes {margin:10px 0 0 30px; width: 605px; height: 25px;  background-color: #F4F4F4; border: medium none; border-radius: 0.3em 0.3em 0.3em 0.3em; color: #666666; cursor: pointer; font-weight: 700; padding: 2px 4px; text-align: center; text-shadow: 0 1px rgba(0, 0, 0, 0.1); font-weight: 700;border: 1px solid #D8D8D8}
+.admin_bonton_ver_solicitudes_pendientes {margin:10px 0 0 30px; width: 605px; height: 25px;  background-color: #DA5814; border: medium none; border-radius: 0.3em 0.3em 0.3em 0.3em; color: #ffffff; cursor: pointer; font-weight: 700; padding: 2px 4px; text-align: center; text-shadow: 0 1px rgba(0, 0, 0, 0.1); font-weight: 700;border: 1px solid #D8D8D8}
+#admin_exp_ventana_solicitudes{margin-bottom: 15px; color: #666666;}
+#admin_exp_ventana_solicitudes p{font-size: 1.2em}
+.admin_bloque_solicitud{padding: 5px; border-bottom: 1px dotted #E4E4E4;margin-top: 15px}
+.admin_solicitante{color: #DA5814}
+.admin_accion{color: #7A923B; font-weight: 700}
+.admin_colaborador{color: #EDA541}
+.admin_exp{color: #DA5814}
+.admin_boton_aceptar{margin-top: 10px; width: 100px; height: 25px;  background-color: #7A923B; border: medium none; border-radius: 0.3em 0.3em 0.3em 0.3em; color: #FFFFFF; cursor: pointer; font-weight: 500; padding: 2px 4px; text-align: center; text-shadow: 0 2px rgba(0, 0, 0, 0.1);}
+.admin_boton_rechazar{margin-top: 10px; width: 100px; height: 25px; background-color: #DA5814; border: medium none; border-radius: 0.3em 0.3em 0.3em 0.3em; color: #FFFFFF; cursor: pointer; font-weight: 500; padding: 2px 4px; text-align: center; text-shadow: 0 2px rgba(0, 0, 0, 0.1);}
+.admin_ver_sol_pasadas{cursor: pointer; margin-top: 10px; font-size: 1.2em; color: #666666}
+
+/*herramienta de encuestas*/
+.admin_margen_izq{
+    margin-left:20px;
+}
+
+.admin_margen_izq_10{
+    margin-left:10px;
+}
+
+.admin_encuestas{
+    margin-top: 40px;
+}
+
+.admin_subcategoria{
+    margin-left:20px;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: bold;
+}
+
+.admin_long_id_encuesta{
+    width:70px
+}
+
+.admin_tabla_categoria{
+    width: 98%;
+}
+
+.admin_tabla_categoria td{
+    /*width:40%*/
+}
+
+.admin_tabla_margenes_verticales{
+    margin: 10px 0px 10px 0px
+}
+
+.admin_texto_input{
+    font-size: 1.1em;
+}
+
+.admin_boton_encuesta{
+    font-size: 1.1em !important;
+    background-color: #EDA541;
+    border: medium none;
+    border-radius: 0.3em 0.3em 0.3em 0.3em;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: 700;
+    padding: 2px 4px;
+    text-align: center;
+    text-shadow: 0 2px rgba(0, 0, 0, 0.1);
+    height: 30px;
+    margin: 20px 10px 20px 0px;
+    width: 140px
+}
+
+.admin_margen_abajo_cero{
+    margin-bottom: 0px;
+}
+
+.admin_margen_abajo{
+     margin-bottom: 10px;
+}
+
+.admin_flotar_derecha{
+    float:right;
+}
+
+.admin_div_tabla_encuestas{
+    margin: 10px 10px 20px 20px;
+    border: 1px solid #AAAAAA;
+    border-radius: 0.6em;
+}
+
+.admin_tabla_encuestas{
+    width:100%;
+        margin-bottom: 0px;
+}
+
+.admin_nueva_encuesta{
+    width:30%
+}
+
+.admin_boton_activr_encuesta{
+    margin-bottom: 0;
+    margin-right: 0;
+}
+
+.admin_border_cabecera{
+     border-bottom: 1px solid #AAAAAA;
+}
+
+.admin_tabla_encuestas td{
+    padding: 3px 3px 3px 3px;
+    vertical-align: middle;
+}
+
+.admin_alinear_centro{
+    text-align: center;
+}
+
+.admin_c_nombre{
+    width:34%;
+    border-right: 1px solid #AAAAAA;
+}
+
+.admin_c_encuestados{
+    width:20%;
+    border-right: 1px solid #AAAAAA;
+    vertical-align: middle;
+}
+
+.admin_c_finicio{
+    width:18%;
+    border-right: 1px solid #AAAAAA;
+}
+
+.admin_c_id{
+    width:12%;
+    border-right: 1px solid #AAAAAA;
+}
+
+.admin_c_ffinal{
+    width:18%;
+}
+
+.long_anio{
+    width: 40px;
+    float:left;
+}
+
+.admin_combo_anio{
+    width:70px
+}
+
+.admin_tabla_interior{
+
+}
+

@@ -1,0 +1,69 @@
+<?php
+
+	
+	if (strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) != 'xmlhttprequest' && !isset($_SERVER['HTTP_REFERER']))header("Location:ingresar.php");
+
+	$ruta_raiz = "./";
+	require_once($ruta_raiz . "conf/config.php");
+	require_once($ruta_raiz . "inc/all.inc.php");
+	//require_once($ruta_raiz."inc/verificar_sesion.inc.php");
+
+	$accion=$_REQUEST["accion"];
+	$id_sesion=$_REQUEST["id_sesion"];
+
+	if ($id_sesion!=""){
+		if ($accion=="cerrar_navegador"){
+			$conexion=dbConectarMySQL($config_host_bd,$config_usuario_bd,$config_password_bd,$config_bd);
+			dbLogCerrarSesion($id_sesion,2,$conexion);
+			dbDesconectarMySQL($conexion);
+			salirActualPaginaKelluwen();
+			echo 1;
+		}elseif($accion=="click_seccion"){
+			$nombre_seccion=$_REQUEST["nombre_seccion"];
+			$conexion=dbConectarMySQL($config_host_bd,$config_usuario_bd,$config_password_bd,$config_bd);
+			dbLogClickVisitaSeccion($id_sesion,$nombre_seccion,$conexion);
+			dbDesconectarMySQL($conexion);
+			echo 1;
+		}elseif($accion=="revertir_cierre"){
+			$conexion=dbConectarMySQL($config_host_bd,$config_usuario_bd,$config_password_bd,$config_bd);
+			dbLogRevertirCierreSesion($id_sesion,$conexion);
+			dbDesconectarMySQL($conexion);
+			echo 1;
+		}elseif($accion=="vis_detalle_info"){
+			$id_experiencia=$_REQUEST["id_experiencia"];
+			$id_elemento=$_REQUEST["id_elemento"];
+			$accion_detalle=$_REQUEST["accion_detalle"];
+			$vista_activa=$_REQUEST["vista"];
+			$perspectiva_activa=$_REQUEST["perspectiva"];
+			$conexion=dbConectarMySQL($config_host_bd,$config_usuario_bd,$config_password_bd,$config_bd);
+			dbLogVisualizacionAccesoDetalleInfo($id_sesion,$id_experiencia,$id_elemento,$accion_detalle,$vista_activa,$perspectiva_activa,$conexion);
+			dbDesconectarMySQL($conexion);
+			echo 1;
+		}elseif($accion=="vis_cambio_vista"){
+			$id_experiencia=$_REQUEST["id_experiencia"];
+			$tipo_cambio_vista=$_REQUEST["tipo_cambio_vista"];
+			$vista_transicion=$_REQUEST["vista_transicion"];
+			$perspectiva_transicion=$_REQUEST["perspectiva_transicion"];
+			$conexion=dbConectarMySQL($config_host_bd,$config_usuario_bd,$config_password_bd,$config_bd);
+			dbLogVisualizacionCambioVista($id_sesion,$id_experiencia,$tipo_cambio_vista,$vista_transicion,$perspectiva_transicion,$conexion);
+			dbDesconectarMySQL($conexion);
+			echo 1;
+		}else{
+			echo 0;
+		}
+	}else{
+		if ($accion="despliegue_ayuda"){
+			$id_usuario=$_REQUEST["id_usuario"];
+			$despliegue_ayuda_clase=$_REQUEST["ayuda_clase"];
+			$despliegue_ayuda_selfcentered=$_REQUEST["ayuda_selfcentered"];
+			$conexion=dbConectarMySQL($config_host_bd,$config_usuario_bd,$config_password_bd,$config_bd);
+			$resp=dbLogActualizarDespliegueAyuda($id_usuario,$despliegue_ayuda_clase,$despliegue_ayuda_selfcentered,$conexion);
+			dbDesconectarMySQL($conexion);
+			echo $resp;
+		}else{
+			echo 0;
+		}
+	}
+	
+
+?>

@@ -1,0 +1,81 @@
+<?php
+    /**
+     * @author  Elson Gueregat - Kelluwen
+     * @copyleft Kelluwen, Universidad Austral de Chile
+     * @license www.kelluwen.cl/app/licencia_kelluwen.txt
+     * @version 0.1  
+     **/
+
+    $ruta_raiz = "./../";
+    require_once($ruta_raiz . "conf/config.php");
+    require_once($ruta_raiz . "inc/all.inc.php");
+    require_once($ruta_raiz . "inc/verificar_sesion.inc.php");
+    require_once($ruta_raiz . "inc/db_functions.inc.php");
+    require_once($ruta_raiz . "taller_dd/inc/tdd_db_funciones.inc.php");
+    require_once($ruta_raiz . "taller_dd/conf/tdd_config.php");
+    
+    $conexion= dbConectarMySQL($config_host_bd, $config_usuario_bd, $config_password_bd, $config_bd);
+    
+    $fca_id_actividad   = $_GET["id_actividad"];
+    $tipo               = $_GET["id_tipo"];
+    $previos            = ((isset($_GET["previos"]) )?$_GET["previos"]:NULL);
+    $fca_id_diseno      = $_GET["id_diseno"];
+    
+    if($previos != NULL){        
+        $id_activ_ = obtenerIdPrevioEnun($fca_id_diseno, $fca_id_actividad, $tipo, $conexion);
+        if($id_activ_ > 0){
+            $fca_id_actividad = $id_activ_;            
+        }
+    }
+    
+    $id_tipo = $tipo;   
+    if($tipo == "autoyco"){$id_tipo = 1;}
+    else if($tipo == "prodhetero"){$id_tipo = 4;}
+    else if($tipo == "eco"){$id_tipo = 5;}
+    
+    $_pautas = obtenerPautasPorTipoFuncion($fca_id_actividad, $id_tipo, $conexion );
+    if(count($_pautas <=0) ){
+        if($id_tipo == 1){$_pautas = obtenerPautasPorTipoFuncion($fca_id_actividad, 2, $conexion );}
+        else if($id_tipo == 4){$_pautas = obtenerPautasPorTipoFuncion($fca_id_actividad, 3, $conexion );}
+        
+    }
+    //error_log(print_r($_pautas,true));
+    
+    if($previos != NULL && count($_pautas) <= 0){       
+        dbDesconectarMySQL($conexion);
+        die();            
+    }
+    
+    $maxLengh = 100;
+
+    $totalPautas = count($_pautas);
+?>
+    <ul style="margin-bottom: 0px;">
+    <?php
+    $maxLengh = 100;
+    for($i=0 ; $i< $totalPautas; $i++){
+	$cut = false;
+	$tooltipText = "";
+	$enunciado = $_pautas[$i]['enu_contenido'];
+	if(strlen($enunciado) > $maxLengh) {
+		$enunciado= substr($enunciado,0,strrpos(substr($enunciado,0,$maxLengh-3)," "))."...";
+		$cut = true;
+		$tooltipText = str_replace(array("\\n","\\r","'", '"'), array(" "," ","\'", '\"'), $_pautas[$i]['enu_contenido']);
+	}
+
+	echo '<li class ="li_mis_pautas" id="'.$_pautas[$i]['rbenu_id_enunciado'].'" '.(($cut)?("title=\"".$tooltipText."\""):"").'>';
+        echo '<div>'.$enunciado.'</div>';
+        if($previos ==  NULL){
+            echo '<a class="link_mis_pautas" name="eliminar_pauta" onClick="eliminarPauta('.$_pautas[$i]['rbenu_id_enunciado'].','.$fca_id_actividad.','.$_pautas[$i]['rbenu_id_rubrica'].','.$_pautas[$i]['rbenu_orden'].','.$id_tipo.')">'.$lang_nueva_actividad_eliminar.'</a>';
+            if($_pautas[$i]['rbenu_orden'] != $totalPautas)echo '<input name="mover_pauta_abajo" class="boton_pauta_abajo" type="button" value="" onClick="bajarPauta('.$_pautas[$i]['rbenu_id_enunciado'].','.$_pautas[$i]['rbenu_orden'].','.$_pautas[$i]['rbenu_id_rubrica'].','.$fca_id_actividad.','.$id_tipo.');"/>';
+            if($_pautas[$i]['rbenu_orden'] != 1)echo '<input name="mover_pauta_arriba" class="boton_pauta_arriba" type="button" value="" onClick="subirPauta('.$_pautas[$i]['rbenu_id_enunciado'].','.$_pautas[$i]['rbenu_orden'].','.$_pautas[$i]['rbenu_id_rubrica'].','.$fca_id_actividad.','.$id_tipo.');"/>';
+        }
+        echo '</li>';
+    }
+    ?>
+    </ul>
+<?php
+
+dbDesconectarMySQL($conexion);
+
+?>

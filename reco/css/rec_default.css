@@ -1,0 +1,43 @@
+/* 
+ * FORMULARIO DE INGRESO DE RECOMENDACIONES Y EVALUACION DE ACTIVIDAD AL
+ * FINALIZAR ACTIVIDADES
+ */
+.rec_caja_nueva_reco textarea{width:89%;height:70px;-webkit-border-radius:.4em;-moz-border-radius:.4em;border-radius: 0.4em;border:1px solid #cdcdbf;background-color:#fff;padding:5px;margin:4px 20px !important; max-width: 89%; min-width: 89%; max-height: 70px; min-height: 70px;}
+.rec_caja_nueva_reco label{background:url("../../img/error.png") no-repeat scroll left center transparent;margin:4px 20px !important;color:#DA5814;font-size:1.1em;width:382px;padding-left:20px}
+.rec_resaltado {font-weight:700; font-size:1.2em; margin:4px 20px !important; padding:8px 15px !important;}
+.rec_chkbox_evaluacion {font-size:1.2em; margin:4px 20px !important;padding:0px 15px !important;}
+.rec_chkbox_error label{background:url("../../img/error.png") no-repeat scroll left center transparent; margin:4px 20px !important;color:#DA5814;font-size:1.1em;padding-left:20px}
+.rec_caracteres_disp{margin:0px 20px !important; float:right;}
+
+/* CUADRO DE RECOMENDACIONES (DESPLIEGUE EN GESTION DE AVANCE) */
+.rec_despl_cuadroreco{border-radius: 0.9em;-webkit-border-radius: 0.9em; -moz-border-radius: 0.9em; background-color: #ffffcc; margin-top: -10px; border: 2px solid #EECC66; padding: 4px 10px 4px 10px; list-style-type: none; float:right; width: 22.9em; }
+.rec_titulo_cuadroreco_c{font-size: 1.1em; font-weight: bold;}
+.rec_titulo_cuadroreco_a{font-size: 1.1em; font-weight: bold;}
+.rec_bloque_despliegue li{margin-left:0;padding-left:0;padding-top:0; border-bottom:1px solid #ccc; list-style-type: none;}
+.rec_bloque_cabecera{list-style-type: none;}
+.rec_datos_actividad{overflow:hidden;}
+.rec_cabecera_cuadroreco p{line-height: 1.1em;padding-bottom:10px;padding-top:15px;}
+.rec_menu_cuadroreco{float:right; width:80%; padding-top: 10px;margin-bottom: 10px; overflow: hidden}
+.rec_avatar_cuadroreco{float:left;width:12%; margin-top: 10px;}
+.rec_mensaje_cuadroreco{overflow:hidden; margin: 0 0 0 0;}
+.rec_fecha_cuadroreco{color:#999999}
+
+/* ME GUSTA/YA NO ME GUSTA */
+.rec_megusta{float:left; margin-left: 8px;font-size: 0.9em }
+.rec_boton_megusta_mensaje{background: none; border: none; cursor: pointer;  color: #999999 !important;}
+
+.rec_ver_megusta{float: right; margin-left: 5px}
+.rec_ver_megusta span{color: #999999 !important}
+.rec_boton_ver_megusta{color: #FFFFFF; float: left;font-size: 0.9em;border: medium none; text-align: center; font-weight: normal; text-decoration: underline}
+
+.rec_t_usuarios_gustamsj{width:100%;margin:0; margin-top: 15px}
+.rec_t_usuarios_gustamsj thead td{padding:5px 10px}
+.rec_t_usuarios_gustamsj tbody tr{border-bottom: 1px solid #CBCBBF;}
+.rec_t_usuarios_gustamsj tbody td{padding:5px 15px;vertical-align:top}
+.rec_t_usuarios_gustamsj thead td.col1_gustamsj, .rec_t_usuarios_gustamsj thead td.col2_gustamsj, .rec_t_usuarios_gustamsj thead td.col3_gustamsj{color:#444444;font-weight:700;background-color:#F4F4F2;border-bottom:1px solid #CDCDBF;border-top:1px solid #CDCDBF}
+.rec_t_usuarios_gustamsj td.col1_gustamsj{width:40%}
+.rec_t_usuarios_gustamsj td.col2_gustamsj, .rec_t_usuarios_gustamsj td.col3_gustamsj{width:25%}
+.rec_nombre_usuario_gustamsj{font-size:1em;float:left;text-decoration:none; padding-top: 15px}
+.rec_ver_mas_gusta_mensaje{text-align: center; margin-top: 20px}
+.rec_img_integrantes{float:left;padding:5px}
+.rec_fecha_comentario{color:#999;font-weight:700}
